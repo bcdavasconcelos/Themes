@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <name>CobaltXs</name>
+    <type>dark</type>
+    <background-color>#131b29</background-color>
+    <highlight-background-color>#223056</highlight-background-color>
+    <text-color>#FFFFFF</text-color>
+    <selected-text-color>#f6f4d1</selected-text-color>
+    <selection-color>#5d5e66</selection-color>
+    <accent-color-one>#f7cd45</accent-color-one>
+    <accent-color-two>#694fb6</accent-color-two>
+    <note-color>#b0b0b0</note-color>
+    <caret-color>#3478f6</caret-color>
+    <guide-color>#223056</guide-color>
+    <expander-color>#3f8e59</expander-color>
+    <markup-color>#f7cd45</markup-color>
+    <checkmark-color>#65737E</checkmark-color>
+     <highlighting-rule>
+        <tags>trad, tradução</tags>
+        <highlight-tag-color>#15262e</highlight-tag-color>
+        <highlight-text-color>#387e4f</highlight-text-color>
+    </highlighting-rule>
+    <highlighting-rule>
+        <tags>revisar, @?, #?, dúvida</tags>
+        <highlight-tag-color>#5b3f3c</highlight-tag-color>
+        <highlight-text-color>#fffefe</highlight-text-color>
+    </highlighting-rule>
+    <highlighting-rule>
+        <tags>urgente, importante, atenção, todo, observar, lembrar</tags>
+        <highlight-tag-color>#bc6a67</highlight-tag-color>
+        <highlight-text-color>#fffefe</highlight-text-color>
+    </highlighting-rule>
+</theme>

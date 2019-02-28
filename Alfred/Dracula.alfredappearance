@@ -1,0 +1,60 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFCC00FF",
+        "font" : "System",
+        "color" : "#58667CFF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#3C4556FF",
+        "font" : "System",
+        "color" : "#58667CFF"
+      },
+      "backgroundSelected" : "#58667CFF",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#FFFF00FF",
+        "font" : "System",
+        "color" : "#BB98C6FF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 3,
+      "iconSize" : 40
+    },
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "search" : {
+      "paddingVertical" : 4,
+      "background" : "#3C4556FF",
+      "spacing" : 8,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#000000FF",
+        "font" : "System Light",
+        "color" : "#CCCCCCFF"
+      },
+      "backgroundSelected" : "#D0EAC7FF"
+    },
+    "scrollbar" : {
+      "color" : "#8BE9FCFF",
+      "thickness" : 2
+    },
+    "name" : "Dracula",
+    "window" : {
+      "color" : "#3C4556FF",
+      "paddingHorizontal" : 9,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 15,
+      "roundness" : 3,
+      "paddingVertical" : 8
+    }
+  }
+}

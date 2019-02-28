@@ -1,0 +1,850 @@
+/*
+** ConnectedText Style Sheet (c) 2005 ConnectedText
+** Modified by Paul Miller, December 2014 to February 2015
+** comments added, March 2015
+** Color pallet modified by Bernardo Vasconcelos, December 2018.
+*/
+
+/*  The purpose of this CSS file is as a tutorial.  It is not meant to be an endpoint but a starting point.
+**
+**  Go forth and modify.
+*/
+
+
+/*
+**  A note about Typography
+**  -----------------------
+**  I like to use Sans-serif fonts for headings and Serifed fonts for body text.  For Body text I prefer a font with
+**  a low x height.  If a font with a low x height is not available then spacing the lines wider than they would have
+**  been is a poor substitute but better than nothing.
+**
+**  There is research to suggest that you will on average comprehend the text faster in a Sans-serif font but for long
+**  bodies of text it more comfortable to read a serifed font.
+**
+**  Of course you may use whatever fonts you prefer.
+**
+**  In a CSS file when specifying a font it is a convention to list several fonts and then a font type (Sans-serif, Serif
+**  or Cursive).  This is because for a web page you do not know what fonts are installed on the target system.
+**
+**  The font which appears on the page is the first one in the list which is found, if it finds none of them then it picks
+**  its own default font from the family specified, that means 'Times New Roman' if the serif family is specified or 'Ariel'
+**  if the Sans-serif family is specified.
+**
+**  For a personal wiki you know exactly what fonts are installed on your system so the font definition could be shortened
+**  but it is still wise to include the font family just in case that font is somehow lost.
+**
+**  Font sizes and line heights (along with other measurements) may be specified in absolute terms or relative to the
+**  size of the font used.  Absolute measurements include points (pt) and millimeters (mm), relative measurements
+**  include Em-height (em) and pixels (px).  Relative measures are better in my opinion because they scale with the
+**  size of the font used.
+**
+**  Em-height is the height of a capital M in the font being used, a related measure is the x-height (ex) which is the
+**  height of a lower case x and is measured relative to the Em-height (Em-height being 1).  The x-height (ex) is not
+**  the width of a lower case x as stated in the Welcome Project.
+*/
+
+
+/*
+**  Colours
+**  -------
+**  To get a specific colour you may use any of the standard colour names (see the topic 'Color names' in the Welcome
+**  Project, the names are not case sensitive and must not contain spaces.  If the colour you want is not available as
+**  one of the standard colours then you can specify Red, Green and Blue values directly (in hexadecimal) using the
+**  nomenclature :-
+**
+**  #RRGGBB
+**
+**  or :-
+**
+**  #RGB
+**
+**  Where each letter represents a hexadecimal digit.  R specifies the intensity of red, G specifies the intensity of
+**  green and B specifies the intensity of blue.  So  #FFE5CB would be a light pinkish orange brick colour and
+**  #ccccff  would be slate blue, #000000 would be black and #FFFFFF would be white.
+**
+**  The three digit colour has the same range as the six digit colour, it just has less resolution.
+*/
+
+
+/*  Positioning
+**  -----------
+**  The position of an element which fits in a block may be altered by including a margin and/or padding around it.
+**  If you imagine the element inside a box, that box is the border of the element, the border may be visible or
+**  invisible.  If you add a margin then that moves the whole box by placing a margin between the box and adjacent
+**  elements.  If you add padding the effect is different, padding expands the box away from the element within by
+**  the width of the padding.
+**
+**  Margins or Padding can be added to all four sides at once or to each side individually, the width may be different
+**  on each side.
+**
+**  margin:  0.5em;  --  puts a margin of 0.5em around the element (top, bottom, left and right)
+**
+**  padding-left: 15px;   --  move the element away from its left hand border by 15 pixels
+**
+**  margin: 10pt 1.5em 15px 0;  --  put a margin of 10 points at the top, 1.5em on the right, 15 pixels at the bottom
+**                                  and no margin on the left.
+**
+*/
+
+
+/* ------------------------------------------------------------------------------------
+**  'body'
+**  
+**  This is the block which defines the characteristics of the content of a page, but be aware that is any
+**  subordinate elements re-define any parameters then their definitions will take precedence.  The font and
+**  colour of text set here will be the default throughout the project.
+**
+**  If you set a background colour here it will only take effect in elements which do not set their own
+**  bacground colour.
+**
+**  Margins placed here give a gap between the text/graphics on the page and the edge of the viewing pane.
+**
+**  I like widely spaced lines, if you don't then you might want to reduce the 'line-height' parameter.
+*/
+body {
+  margin-right:40px; 
+  margin-left:40px; 
+  font-family:"Gentium Plus, IowanOldSt BT,Palatino Linotype,Georgia,Serif"; 
+  font-size:small; 
+  line-height: 1.6em;
+  color: #EFF6E6; 
+  background-color: #363845;   /* Default background for all elements */
+  }
+
+
+/*  'p'  (paragraph)
+**  
+**  This block defines the characteristics of ordinary paragraphs, but not list items or tables or headings
+**  or links.  If nothing is set then the 'body' defaults are used.
+**  
+**  If you set a background colour here it will only take effect in the body text of topics, Category links
+**  and the space around an image.  This is not as useful as setting a default background colour in 'body'.
+*/
+p {
+  font-size:small; 
+  }
+
+/*   ---------------------------------------------------------------------------------------
+**  'h?'  (headings)
+**  
+**  These are the blocks which define the characteristics of the headings.  Common parameters are defined in
+**  the h1, h2, h3, h4, h5 block and things which are diffrerent between the headings are defined in the
+**  individual blocks.
+*/
+
+h1, h2, h3, h4, h5 {
+  font-family:"Gentium Plus, Calibri,Trebuchet MS,Tw Cen MT,Sans-serif";
+  font-weight: normal;
+  margin: 0;
+  padding-top: .5em;
+  padding-bottom: .17em;
+  }  
+
+
+/*  This is my set of definitions for headings.
+**
+**  It starts of with heading 1 with bold, large type in Maroon with a thick Brown line below, as it progresses
+**  towards heading 5 the type decreases in size and the line below gets thinner.
+*/
+
+h1 {
+  font-size:200%; 
+  font-weight:bold;
+  border-bottom: 3px solid #EFF6E6;
+  color: #3CD773; 
+  }
+
+h2 {
+  font-size:180%;
+  font-weight:bold;
+  border-bottom: 2.5px solid #EFF6E6;
+  color: #3CD773; 
+  }
+
+h3 {
+  font-size:160%; 
+  font-weight:bold; 
+  border-bottom: 2px solid #EFF6E6;
+  color: #3CD773; 
+  }
+
+h4 {
+  font-size:150%; 
+  font-weight:bold; 
+  border-bottom: 1px solid #EFF6E6;
+  color: #3CD773; 
+  }
+
+h5 {
+  font-size:135%; 
+  font-weight:bold; 
+  border-bottom: 1px solid #EFF6E6;
+  color: #3CD773;  
+  margin-bottom: 0;
+  }
+
+
+/*  ---------------------------------------------------------------------------------------
+**  Un-Ordered Lists
+**  
+**  This block sets the characteristics of un-ordered lists, this includes the 'Table of Contents' at the start
+**  of a topic.
+**
+*/
+ul {
+  margin-top: 4pt; 
+  margin-bottom: 8pt;
+  text-align: left;
+  /* width:90%; */           /* Width relative to the Viewing area */
+  line-height: 1.5em;        /* Line spacing of about 1.5 times the height of a capital letter */
+  } 
+
+
+/*  ---------------------------------------------------------------------------------------
+**  Ordered List
+**  
+**  This block applies to numbered lists.
+*/
+ol  {
+   margin-top: 4pt;
+   margin-bottom: 4pt;
+   }
+
+/*  ---------------------------------------------------------------------------------------
+**   There is an additional block called 'li' which applies to list elements of both ordered and unordered lists.
+**   It is undefined in this CSS file as no parameters need to be set.
+*/
+
+/* li {   }  */
+
+/*  ---------------------------------------------------------------------------------------
+**  Definition List
+**  
+**  Characteristics defined in these three elements apply to 
+**  ;Term:Definition lists.
+**
+**  'dl'  applies to the whole list (common settings)
+**   'dt'  applies to the term
+**   'dd'  applies to the definition
+*/
+dl {
+   margin-top: 4pt;
+   margin-bottom: 4pt;
+   }
+
+/*
+** Definition Term
+*/
+dt {font-weight: bold;}
+
+/*
+** Definition Element
+*/
+dd {font-weight: normal;}
+
+
+
+/*  ---------------------------------------------------------------------------------------
+** Typewriter Text ( Monospaced )
+*/
+
+tt {
+  font-family:"Trebuchet MS,Lucida Console,Courier,monospace"; 
+  color:#F6A055;
+  background-color: #363845;
+  }
+
+/*  ---------------------------------------------------------------------------------------
+** Pre Formatted Text ( Monospaced )
+*/
+
+pre {
+  font-family:"Monospac821 BT,Lucida Console,Courier New,monospace"; 
+  color:#F6A055; 
+  background-color: #363845;
+  }
+
+pre.code {
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  background-color: #363845;
+  white-space:pre;
+  border-style:solid;
+  border-width:1px;
+  color:#F6A055;
+  padding:10px;
+  width:100%;
+  }
+
+.highlite {
+  background-color: #5F6168;
+  }
+
+/*   ----------------------------------------------------------------------------------------
+**  Roll your own table styles
+**
+**  This section is also not in the CSS standard.  It sets up a special table with a thick outer perimiter which is
+**  like the summary tables defined in this CSS file.
+**
+**  Credit for this suggestion goes to Jacek Drobnik, if you don't like grey borders then change the #aaa to Black
+**  or any other colour you like.
+**
+**  To use this style of table start your table with 
+**
+**    {|%%class=MCT%%
+**
+**  instead of
+**
+**    {|
+**
+**  There is NO SPACE between the {| and the %%
+*/
+
+table.MCT {
+  border-collapse: collapse;
+  border: 2px #666 solid;
+  font-size: 100%;
+}
+
+table.MCT td {
+   border: 1px #999 solid;
+   padding: 5px 15px 5px 15px;
+}
+
+
+/*  ---------------------------------------------------------------------------------------
+** Table
+**
+**  Defines the appearance of a table.  Setting a border doesn't seem to make much difference.
+**  I was hoping to use the same trick I did with summary tables but it didn't work.
+*/
+
+table     {font-size:100%;}
+
+table.float {
+  float:right;
+  margin: 1.5em 1.5em 1.5em 0;
+}
+
+
+/*
+**  '.tabletext' defines the appearance of the text in a table.
+**
+**  The Tables generated by Connected Text are usually cramped looking, in this section I have added padding
+**  around the text to give the tables a less cramped appearance, adjust the value to suit your own needs.
+**  It may be defined in 'px' (pixels) or 'em' (the height of a capital M in the font you are using).
+*/
+
+.tabletext {
+  font-family:"IowanOldSt BT,Palatino Linotype,Georgia,Serif";
+  background-color: #363845;   /* Background Colour used in Tables */
+  padding-left: 15px;
+  padding-right: 15px;
+  } 
+
+/*   ---------------------------------------------------------------------------------------
+**  I don't know what these do.
+**
+**  I have changed their appearance and have seen no instances of them.
+*/
+
+.invalidlink {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:Maroon; 
+  text-decoration: line-through;
+  background-color: #363845;
+  }    
+
+.invalidfile {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:red; 
+  text-decoration: line-through;
+  background-color: White;
+  }    
+  
+/*  ---------------------------------------------------------------------------------------
+** Infobox
+**
+**  This section defines the characteristics of the Infobox, I put a little more padding around
+**  the text so it didn't look so cramped and changed the background colour.
+*/  
+  
+.infobox {
+    border: 2px solid #888;
+    background-color:  #363845;
+    color: #EFF6E6;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.7em;
+    float: left;
+    clear: left;
+}
+
+.infobox th {
+    font-size: 80%;
+  text-align: left;
+    vertical-align: top;
+}
+
+.infobox td {
+    font-size: 80%;
+    vertical-align: top;
+}
+.infobox caption {
+    font-size: larger;
+    margin-left: inherit;
+}  
+
+
+/*  ---------------------------------------------------------------------------------------
+** Summary table
+**
+**  These sections control the formatting of Summary Tables
+**
+**  The element 'border' defines the outer border around the summary table 2px specifies the thickness as 2 pixels
+**  the second parameter specifies the colour and the third parameter specifies a solid line.
+*/
+
+table.summary  {
+    margin: 1.5em 1.5em 1.5em 0;
+    background:  #363845;   /* Background used for Summary Tables */
+    border: 2px #666 solid;
+    border-collapse: collapse;
+}
+
+/*
+**  This section defines the characteristics of the text in a summary table.
+**
+**  The element 'border' defines the border around the text contained within the summary table
+**  1px specifies the thickness as 1 pixel, this controls the lines within the table and not the outer edge,
+**  the second parameter ( #aaa in this case ) specifies the colour ( mid grey in this case) and the third
+**  parameter specifies a solid line.
+**
+**  The padding gives some space around the text in the table.
+*/
+
+.summary th, 
+.summary td {
+    border: 1px #999 solid;
+    padding: 5px 15px 5px 15px;
+}
+
+.summary th {
+    text-align: center;
+}
+
+.summary caption {
+    margin-left: inherit;
+    margin-right: inherit;
+    font-weight: bold;
+}
+
+.editsection {
+  float: right;
+  margin-left: 5px;
+  }
+
+/*  ---------------------------------------------------------------------------------------
+** Link to a Topic
+**
+**  This is the start of several sections which define the appearance of links to various things.
+**  It is possible to set them all to have a different appearance from each other but I think this
+**  would not be a good idea.  It is possible to have them all underlined all the time but that is not
+**  the way I have set them.  I like links to be blue and for an underline to appear when the mouse
+**  moves over the link, so that is the way I have set them.  Consistency.
+**
+**  Block formatting (like margins, padding and border) do not work for these elements.
+**
+**  You can set the colour, background and decoration for each of the four states of each type of link
+**  independent of each other, have fun.
+*/
+  
+a:link     {color: #10DCF3;
+	    text-decoration:none;}
+a:visited  {color: #10DCF3;
+	    text-decoration:none;}
+a:active   {color: #10DCF3;
+	    text-decoration:none;}
+a:hover    {color: #10DCF3;
+		text-decoration:underline;}
+
+/*  ---------------------------------------------------------------------------------------
+**  Links to Attributes
+**
+** This section controls the links to attributes which appear in summary tables, at the head of a column.
+*/
+
+a.attributetopic:link     {color: #10DCF3;  text-decoration:none;}
+a.attributetopic:visited  {color: #10DCF3;  text-decoration:none;}
+a.attributetopic:active   {color: #10DCF3;  text-decoration:none;}
+a.attributetopic:hover    { text-decoration:underline;}
+
+/*  ---------------------------------------------------------------------------------------
+** Links to empty topics
+*/
+
+a.emptytopic:Link {
+    color: DarkSalmon;
+}
+a.emptytopic:Active {
+    color: DarkSalmon;
+}
+a.emptytopic:Visited {
+    color: DarkSalmon;
+}
+a.emptytopic:Hover {
+    text-decoration: underline;
+    Color: DarkSalmon;
+}
+
+/*  ---------------------------------------------------------------------------------------
+** External Links
+*/
+
+a.external:Link {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#10DCF3;
+  text-decoration:none;
+  }
+  
+a.external:Visited {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#10DCF3; 
+  text-decoration:none
+  }
+  
+a.external:Active {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#10DCF3; 
+  text-decoration:none;
+  }
+  
+a.external:Hover {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#F6A055; 
+  text-decoration:underline;
+  }
+  
+/*  ---------------------------------------------------------------------------------------
+**  Link to an E-mail address
+*/
+
+a.email:Link {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#10DCF3; 
+  text-decoration:none;
+  }
+  
+a.email:Visited {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color: #10DCF3; 
+  text-decoration:none
+  }
+  
+a.email:Active {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#10DCF3; 
+  text-decoration:none;
+  }
+  
+a.email:Hover {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#F6A055; 
+  text-decoration:underline;
+  }  
+  
+/*  ---------------------------------------------------------------------------------------
+** Link to another Project
+*/
+
+a.interlink:Link {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color: #10DCF3; 
+  text-decoration:none;
+  }
+  
+a.interlink:Visited {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color: #10DCF3; 
+  text-decoration:none
+  }
+  
+a.interlink:Active {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color: #10DCF3; 
+  text-decoration:none;
+  }
+  
+a.interlink:Hover {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#F6A055; 
+  text-decoration:underline;
+  }  
+  
+/*  ---------------------------------------------------------------------------------------
+** link to an external files
+*/
+
+a.file:Link {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial";
+  color: #10DCF3; 
+  text-decoration:none;
+  }
+  
+a.file:Visited {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial";
+  color: #10DCF3; 
+  text-decoration:none
+  }
+  
+a.file:Active {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial";
+  color: #10DCF3; 
+  text-decoration:none;
+  }
+  
+a.file:Hover {
+  font-family:"Trebuchet MS,Courier,monospace,Verdana,Geneva,Arial"; 
+  color:#F6A055; 
+  text-decoration:underline;
+  }  
+
+/*  ---------------------------------------------------------------------------------------
+** Table of contents
+*/
+
+.tocarea {
+text-align: left;
+}
+
+#toc {
+  border:1px solid #888;
+  background-color: #363845;   /* TOC background */
+  padding:5px;
+  font-size: 95%;
+  }
+
+#toc .tocinside { margin-left: 2em; }  
+#toc .toctitle { background: #363845;  color: #3CD773;  text-align: center; } 
+ 
+#toc .tocline:Link {
+         margin-bottom: 0px;
+		 background-color: #363845;   /* TOC background */
+		 color: #10DCF3; 
+		 text-decoration:none
+		 }
+
+#toc .tocline:Active { 
+         margin-bottom: 0px;
+		 background-color: #363845;   /* TOC background */
+		 color: #10DCF3;
+		 text-decoration:none
+		 }
+
+#toc .tocline:Visited { 
+         margin-bottom: 0px;
+		 background-color: #363845;   /* TOC background */
+		 color: #10DCF3; 
+		 text-decoration:none
+		 }
+
+#toc .tocline:Hover { 
+         margin-bottom: 0px;
+		 background-color: #363845;   /* TOC background */
+		 color: #10DCF3;
+		 text-decoration:underline
+		 }
+
+#toc li { margin: 0 }
+
+/* ----------------------------------------------------------------------------------------
+** Category links
+**
+**  This is the box of links to categories at the bottom (or top or top and bottom, depending on your options)
+**  of your topic. 
+*/
+
+#catlinks {
+  border: 2px solid #EFF6E6;
+  background-color:  #363845;
+  color: #773684;
+  margin-top: 15px ;
+  padding: 5px;
+  clear: both;
+  }
+
+/* -----------------------------------------------------------------------------------------
+** Thumbnails 
+**
+**  ?
+*/
+
+.thumbcaption {
+  font: x-small sans-serif;
+  color: #363845;
+  margin-right: 2px;
+  padding: 0;
+}
+
+.thumbright {
+  border:1px solid #cccccc;
+  padding: 3px;
+  margin: 0.5em 0 0.5em 0.5em;
+  overflow: hidden;
+  float : right;
+}
+
+.thumbleft {
+  border:1px solid #cccccc;
+  padding: 3px;
+  margin: 0.5em 0.5em 0.5em 0;
+  overflow: hidden;
+  float : left;
+}
+
+.thumbcenter {
+  border:1px solid #cccccc;
+  padding: 3px;
+  overflow: hidden;
+  float : none;
+  margin-top: 15px;
+}  
+
+/* -----------------------------------------------------------------------------------------
+** Calendar 
+**
+** These definitions are not part of the CSS standard but these style names are used by Connected Text
+** to set the appearance of the calendar in date topics.
+**
+**  At the moment the background colours of the calendar are set to the same background colour as the page, but if
+**  you want the calendar to stand out you can set it to a different colour and/or put a border around it.
+*/
+
+.Calendar {
+  width:13em;
+  padding: 0 5px 5px 5px;
+  /* border:1px solid #aaa; */     /* Enable this if you want an overall border around the calendar */
+  background:  #363845;   /* Calendar Backgeround, edge down either side */
+  line-height:1em;
+  float: right;
+  margin: 5px;
+} 
+
+.MonthTable {
+  text-align: center;
+  width: 100%;
+  background:#363845;
+  padding: 0;
+  font-size:80%;
+  font-family: Calibri, Verdana, Tahoma, sans-serif;
+} 
+
+.MonthHeading {
+  background:  #363845; /* Calendar Backgeround, upper heading*/
+  color:#112ABB;
+  vertical-align: middle;
+} 
+
+.MonthBottom {
+  background: #363845; /* Calendar Backgeround, space below calendar*/
+  color:#112ABB;
+  vertical-align: middle;
+} 
+
+.DayName {
+  background:  #363845; /* Calendar Backgeround, day names top of calendar*/
+  font-size: 78%;
+  border-bottom:1px #A2BBDD solid;
+  font-family:  Calibri, Verdana, Tahoma, sans-serif;
+} 
+
+.Today {
+  font: bold 78%/1em Calibri,Sans-serif;
+  padding-bottom:4px;
+  text-align:center;
+  border-top:1px #DADDA2 solid;
+} 
+
+.MonthCurr {
+  font: bold 78%/1em Calibri,Sans-serif;
+  padding-bottom:4px;
+  text-align:center;
+} 
+
+.MonthPrev {
+  font-size:125%;
+  padding-bottom:6px;
+  text-align: right;
+} 
+
+.MonthNext {
+  font-size:125%;
+  padding-bottom:6px;
+  text-align: left;
+} 
+
+.Weekday {
+  background: #363845;
+  font-size: 78%;
+} 
+
+.WeekdaySel {
+  background: #363845;
+  font-size: 78%;
+} 
+
+.Weekend {
+  background: #363845;	 
+  font-size: 78%;
+} 
+
+.WeekendSel {
+  background: #363845;	 
+  font-size: 78%;
+} 
+
+.Weekday a:link     {color: #EFF6E6; text-decoration:none; background:#363845;}
+.Weekday a:visited  {color: #EFF6E6; background:#363845;}
+.Weekday a:active   {color: #EFF6E6; background:#363845;}
+.Weekday a:hover    {color: #EFF6E6; text-decoration:underline; background:#363845;}
+
+.WeekdaySel a:link     {color: #EFF6E6; text-decoration:none; background: #363845;}
+.WeekdaySel a:visited  {color: #EFF6E6; background: #363845;}
+.WeekdaySel a:active   {color: #EFF6E6; background: #363845;}
+.WeekdaySel a:hover    {color: #EFF6E6; text-decoration:underline; background: #363845;}
+
+.Weekend a:link     {color: #EFF6E6; text-decoration:none; background:#363845;}
+.Weekend a:visited  {color: #EFF6E6; background:#363845;}
+.Weekend a:active   {color: #EFF6E6; background:#363845;}
+.Weekend a:hover    {color: #EFF6E6; text-decoration:underline; background:#363845;}
+ 
+.WeekendSel a:link     {color: #EFF6E6; text-decoration:none; background: #363845;}
+.WeekendSel a:visited  {color: #EFF6E6; background: #363845;}
+.WeekendSel a:active   {color: #EFF6E6; background: #363845; }
+.WeekendSel a:hover    {color: #EFF6E6; text-decoration:underline; background: #363845;} 
+
+
+/*  ---------------------------------------------------------------------------------------
+**  Tag Cloud
+**
+**  This section controls the appearance of the Tag Cloud produced by the [[$CLOUD:]] command.
+**  The colour of the links is controlled by the parameters in the 'topic link' section of this file.
+*/
+
+#tagcloud {
+    line-height: 2.8em;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-decoration: none;
+	text-transform: none;
+	text-align: center;
+	text-indent: 0ex;
+    background-color: #363845;  /* Tag Cloud Background */
+    margin: 0 0 0 0;
+    border: 2px dotted #ddd;
+    padding: 1em;
+}
+
+#tagcloud a:link {text-decoration: none; background-color: #363845;}
+#tagcloud a:visited {text-decoration: none; background-color: #363845;}
+#tagcloud a:hover {text-decoration: none; color: #F6A055; background-color: #363845; }
+#tagcloud a:active {text-decoration: none; color: #F6A055; background-color: #363845; }

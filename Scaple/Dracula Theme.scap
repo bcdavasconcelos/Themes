@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="A76D9068-75E3-4F53-87B8-5CCD464E391D">
+    <Notes>
+        <Note ID="0" FontSize="14.0" Position="389.113281,186.398438" Width="200.0">
+            <Appearance>
+                <Alignment>Justify</Alignment>
+                <TextColor>0.268393 0.14673 0.189708</TextColor>
+                <Border Weight="1">0.794796 0.560965 0.58607</Border>
+                <Fill>0.964417 0.654973 0.167785</Fill>
+            </Appearance>
+            <String>New Note</String>
+            <ConnectedNoteIDs>1-4</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,8</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="1" FontSize="28.0" Position="361.175781,25.855469" Width="200.0">
+            <Appearance>
+                <TextColor>0.188271 0.828881 0.230481</TextColor>
+            </Appearance>
+            <String># Header</String>
+            <ConnectedNoteIDs>0, 2-3</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,8</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="2" FontSize="14.0" Position="159.507812,184.546875" Width="76.0">
+            <Appearance>
+                <Alignment>Justify</Alignment>
+                <TextColor>0.964417 0.654973 0.167785</TextColor>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+            </Appearance>
+            <String>* Item 1</String>
+            <ConnectedNoteIDs>0-1</ConnectedNoteIDs>
+        </Note>
+        <Note ID="3" FontSize="14.0" Position="336.765625,117.097656" Width="76.0">
+            <Appearance>
+                <Alignment>Justify</Alignment>
+                <TextColor>0.964417 0.654973 0.167785</TextColor>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+            </Appearance>
+            <String>* Item 2</String>
+            <ConnectedNoteIDs>0-1</ConnectedNoteIDs>
+        </Note>
+        <Note ID="4" FontSize="14.0" Position="142.0,324.0" Width="93.0">
+            <Appearance>
+                <Alignment>Justify</Alignment>
+                <TextColor>0.964417 0.654973 0.167785</TextColor>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+            </Appearance>
+            <String>* new item</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>2-4</AutoFit>
+    <NoteStyles>
+        <Style Name="Bubble (Blue)" ID="9ADD0672-6977-4B1F-9741-0C5E325D5495" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="No">
+            <FontSize>14.0</FontSize>
+            <Alignment>Justify</Alignment>
+            <TextColor>0.964417 0.654973 0.167785</TextColor>
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.561855 0.71062 0.779401</BorderColor>
+            <Size>200.0,150.0</Size>
+        </Style>
+        <Style Name="Bubble (Green)" ID="A47D7E83-121A-49DB-8FF3-FD75F7FCFAA5" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="No">
+            <FontSize>14.0</FontSize>
+            <Alignment>Justify</Alignment>
+            <TextColor>0.0 0.919787 1.0</TextColor>
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.572684 0.758969 0.558154</BorderColor>
+            <FillColor>0.158753 0.163637 0.223209</FillColor>
+            <Size>200.0,150.0</Size>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="B4C43B00-A5F3-44B8-8F3D-0AD93707FDF1" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="No">
+            <FontSize>14.0</FontSize>
+            <Alignment>Justify</Alignment>
+            <TextColor>0.960392 0.962534 0.917533</TextColor>
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.268393 0.14673 0.189708</FillColor>
+            <Size>200.0,150.0</Size>
+        </Style>
+        <Style Name="Bubble (Red)" ID="CB0058AB-E9C7-495A-A1EB-D3E175D6211C" AffectFontStyle="Yes" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="No">
+            <FontSize>14.0</FontSize>
+            <Alignment>Justify</Alignment>
+            <TextColor>0.268393 0.14673 0.189708</TextColor>
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.964417 0.654973 0.167785</FillColor>
+            <Size>200.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="1843A345-07F4-429C-A762-EEC9AB189795" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.798177 0.714184 0.522055</BorderColor>
+            <FillColor>0.997722 0.89273 0.652569</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="8E0802E5-40CE-42D3-9A11-73CC00C78792" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985948 0.0 0.026951</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="289B85A8-8AA0-4DD9-B4E5-54E1B68AF344" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="No" AffectSize="Yes" AffectFade="No" AffectSticky="No">
+            <FontSize>28.0</FontSize>
+            <TextColor>0.188271 0.828881 0.230481</TextColor>
+            <BorderThickness>0</BorderThickness>
+            <Size>200.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.113042 0.121765 0.166515</BackgroundColor>
+        <DefaultFont>Inconsolata_XL</DefaultFont>
+        <DefaultTextColor>0.955497 0.957392 0.918018</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>

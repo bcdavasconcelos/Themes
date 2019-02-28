@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#6B633AFF",
+        "font" : "Avenir Next",
+        "color" : "#6E673DFF"
+      },
+      "shortcut" : {
+        "size" : 18,
+        "colorSelected" : "#A56712FF",
+        "font" : "Avenir Next",
+        "color" : "#978D5BFF"
+      },
+      "backgroundSelected" : "#E8DFCAFF",
+      "text" : {
+        "size" : 21,
+        "colorSelected" : "#4E482BFF",
+        "font" : "Avenir Next",
+        "color" : "#6E673DFF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 0,
+      "iconSize" : 57
+    },
+    "search" : {
+      "paddingVertical" : 0,
+      "background" : "#FCF5E3FF",
+      "spacing" : 10,
+      "text" : {
+        "size" : 50,
+        "colorSelected" : "#000000FF",
+        "font" : "Avenir Next",
+        "color" : "#3A4F53FF"
+      },
+      "backgroundSelected" : "#D0EAC7FF"
+    },
+    "window" : {
+      "color" : "#FCF5E3FF",
+      "paddingHorizontal" : 10,
+      "width" : 653,
+      "borderPadding" : 16,
+      "borderColor" : "#0000007F",
+      "blur" : 5,
+      "roundness" : 20,
+      "paddingVertical" : 10
+    },
+    "credit" : "bcdav",
+    "separator" : {
+      "color" : "#E8DFCAFF",
+      "thickness" : 3
+    },
+    "scrollbar" : {
+      "color" : "#A56712FF",
+      "thickness" : 3
+    },
+    "name" : "Solarized 2"
+  }
+}

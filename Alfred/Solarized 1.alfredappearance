@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#7F908FFF",
+        "font" : "System",
+        "color" : "#7F908FFF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#A56712FF",
+        "font" : "System",
+        "color" : "#313D44FF"
+      },
+      "backgroundSelected" : "#E8DFCAFF",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#313D44FF",
+        "font" : "System",
+        "color" : "#313D44FF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 3,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 4,
+      "background" : "#FCF5E3FF",
+      "spacing" : 8,
+      "text" : {
+        "size" : 34,
+        "colorSelected" : "#000000FF",
+        "font" : "System Light",
+        "color" : "#F6F7EEFF"
+      },
+      "backgroundSelected" : "#D0EAC7FF"
+    },
+    "window" : {
+      "color" : "#FCF5E3FF",
+      "paddingHorizontal" : 9,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 15,
+      "roundness" : 3,
+      "paddingVertical" : 8
+    },
+    "credit" : "BCDAV",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#A56712FF",
+      "thickness" : 2
+    },
+    "name" : "Solarized"
+  }
+}

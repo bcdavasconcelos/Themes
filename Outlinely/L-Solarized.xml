@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <name>L-SolarizedX1</name>
+    <type>light</type>
+    <background-color>#faf6e4</background-color>
+    <highlight-background-color>#d0ccb7</highlight-background-color>
+    <text-color>#343c44</text-color>
+    <selected-text-color>#faf6e4</selected-text-color>
+    <selection-color>#a8a185</selection-color>
+    <accent-color-one>#9c6a28</accent-color-one>
+    <accent-color-two>#B48EAD</accent-color-two>
+    <note-color>#818489</note-color>
+    <caret-color>#a3772c</caret-color>
+    <guide-color>#818b8b</guide-color>
+    <expander-color>#9c6a28</expander-color>
+    <markup-color>#a3772c</markup-color>
+    <checkmark-color>#65737E</checkmark-color>
+      <highlighting-rule>
+        <tags>trad1</tags>
+        <highlight-text-color>#424340</highlight-text-color>
+    </highlighting-rule>
+   <highlighting-rule>
+            <tags>trad2</tags>
+        <highlight-text-color>#3b4042</highlight-text-color>
+    </highlighting-rule>
+      <highlighting-rule>
+                <tags>trad3</tags>
+        <highlight-text-color>#343d44</highlight-text-color>
+    </highlighting-rule>
+    <highlighting-rule>
+        <tags>urgente, importante, atenção, todo, observar, lembrar</tags>
+        <highlight-tag-color>#9c6a28</highlight-tag-color>
+    </highlighting-rule>
+</theme>
