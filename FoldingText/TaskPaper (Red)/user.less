@@ -1,0 +1,161 @@
+// This is your user.less. Use it to override the default styling. When this
+// file is first created all lines are commented out (start with //) and so it
+// has no effect in the editor's style.
+
+// To change the font uncomment the following line:
+//@fontFamily: Menlo;
+
+@fontFamily: "GFS Neohellenic", "TheSansMono Office";
+@fontSize: 0.95rem;
+@paperColor: mix(#2E2E2E, black, 97%);
+@textColor: #DBDBDB;
+// mix(@paperColor, @inkColor, 20%)
+
+// nice blue
+//@deskColor: #9fd5df;
+//@paperColor: #d9eef2;
+
+// To change the font size uncomment the following line:
+//@fontSize: 12pt;
+
+// To change the base "ink" color (used for text) uncomment the following
+// line:
+@inkColor: #DBDBDB;
+
+// To change the base "paper" color (behind the text) uncomment the following
+// line:
+//@paperColor: white;
+
+// Color used to indicate something. Such as when mouse is over a link.
+@indicatedColor: #FC3845;
+
+// // Base color for things "on" the paper.
+// @inkColor: black;
+
+// // Paper contains text the content.
+// @paperColor: white;
+// @paperTopMargin:4rem;
+// @paperLeftMargin:4rem;
+// @paperRightMargin:4rem;
+
+// // Desk background color. Desk will only be visible if text wrap width is set
+// // and window is wider then that wrapping width.
+// @deskColor: @paperColor;
+
+// // Color used to indicate clickable interface elements (similar to iOS 7 tint color)
+// @interfaceColor: default;
+
+// // Color used to indicate something. Such as when mouse is over a link.
+// @indicatedColor: #007aff;
+
+// // Default text color
+// @textColor: @inkColor;
+
+// // Secondary text color is used for text content that's not primary. For example
+// @secondaryPercent: 0.5;
+@secondaryTextColor: #A9AAAC;
+
+// // Colors used to indicate folded regions
+@foldColor: @textColor;
+@foldedLineColor: @secondaryTextColor;
+
+// // Cursor
+@cursorColor: #FC3845;
+@cursorWidth: 3px;
+
+// // Selection
+@selectionBackgroundColor: #77262D;
+@focusedSelectionBackgroundColor: #77262D;
+
+// // Color to indicate errors
+// @errorColor: rgb(75%,20%,20%);
+
+// // Sidebar
+@sidebarTextColor: #A9AAAC;
+@sidebarBackgroundColor: #2D2E30;
+@sidebarFontFamily: "Skia";
+@sidebarFont-Stretch: condensed;
+@sidebarFontSize: 8pt;
+
+////////////////////////////////
+// Tags
+////////////////////////////////
+
+.cm-tag {
+	.normalizeTextStyles;
+    color: #5A5A5A;
+    // background-color:    ;
+}
+
+.cm-tagname,
+.cm-tagvalue {
+	.interactive-interface-element;
+}
+
+
+// // Common style for interactive elements, such as links.
+// .interactive-interface-element {
+// 	color: @interfaceColor;
+// 	&:hover {
+// 		cursor: pointer;
+// 		color: @indicatedColor;
+// 	}
+// }
+
+// .truncate(@width) {
+// 	width: @width;
+// 	white-space: nowrap;
+// 	overflow: hidden;
+// 	text-overflow: ellipsis;
+// }
+
+// ////////////////////////////////
+// // Body
+// ////////////////////////////////
+
+// // Disableds "elastic scrolling". Also seems to fix bug where scrolling from
+// // bottom to top of long document would get stuck.
+// // http://support.foldingtext.com/discussions/development-
+// // versions/243-foldingtext-20-dev-build-725#comment_32706134
+// // http://stackoverflow.com/questions/7020842/disable-rubber-band-scrolling-
+// // for-webview-in-lion
+// html, body {
+// 	height: 100%;
+// 	overflow: hidden;
+// }
+
+// body {
+// 	// Seems to work, but watch out for performance, at one point this seemed
+// 	// really slow
+// 	//text-rendering: optimizeLegibility;
+// 	font-family: @fontFamily;
+// 	font-size: @fontSize;
+// 	line-height: @lineHeight;
+// 	color: @textColor;
+// 	background: @deskColor;
+// //	-webkit-font-smoothing: antialiased;
+
+// }
+
+// body.flex {
+//     .flex-display();
+//     .flex-direction(row);
+//     .align-items(flex-start);
+//     .justify-content(flex-start);
+//     .align-content(stretch);
+
+//     margin: 0;
+//     padding: 0;
+
+//     .editor {
+//         position: relative;
+
+//         .flex(1);
+//         .align-self(stretch);
+//         .flex-grow(100);
+//     }
+// }
+
+// a {
+// 	color: @indicatedColor;
+// }
