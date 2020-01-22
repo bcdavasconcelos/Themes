@@ -1,37 +1,38 @@
 body
 {
+background: #212121;
 margin-top: 1px;
 margin-right: 3px;
 margin-left:  2px;
 margin-bottom: 3px;
-background: #272A37;
-color: #F7F7EF;
+color: #f0f0f0;
 font-family: Gentium Plus;
+line-height: 1.3;
 }
 a:link
 {
-color: orange;
+color: #0068da;
 }
 ul
 {
-color: #F7F7EF;
+color: #f0f0f0;
 }
 .gdarticle
 {
-background: #272A37;
-color: #F7F7EF;
+background: #212121;
+color: #f0f0f0;
 margin-top: 0.5em;
 margin-bottom: 0.9em;
 padding: 8px;
-border: 1px solid #272A37;
+border: 1px solid #212121;
 }
 .gdactivearticle
 {
-border: 1px solid #272A37;
+border: 1px solid #212121;
 }
 .gdarticleseparator + script + .gdactivearticle .gddictname
 {
-border-top: 1px solid #272A37;
+border-top: 1px solid #212121;
 }
 .gdarticleseparator
 {
@@ -44,8 +45,8 @@ font-size: 13px;
 font-weight: bold;
 float: center;
 text-align: center;
-color: #6CF033;
-background: #272A37;
+color: #f0f0f0;
+background: #455651;
 border: 0px;
 margin: -6px;
 margin-bottom: 5px;
@@ -57,17 +58,17 @@ cursor: default;
 }
 .gdactivearticle .gddictname
 {
-font-family: Avenir Next;
+font-family: Gentium Plus;
 font-size: 13px;
 font-weight: bold;
 float: center;
 text-align: center;
-color: #6CF033;
-background: #363848;
+color: #f0f0f0;
+background: #a37267;
 margin: -6px;
 margin-bottom: 5px;
 margin-left: 2px;
-border: 1px #272A37;
+border: 1px #212121;
 }
 .gddicticon
 {
@@ -93,7 +94,7 @@ margin-top: 1.5em;
 }
 .dsl_article, .dsl_definition, .dsl_ex, .dsl_opt, .dsl_lang, .dsl_m0, .dsl_m1, .dsl_m2, .dsl_m3, .dsl_m4, .dsl_u, .dsl_b, .dsl_i
 {
-color: white !important;
+color: #f0f0f0 !important;
 }
 .dsl_p {
 color: #FF7400 !important;
@@ -105,7 +106,7 @@ color: #FFD300 !important;
 color: #71FF35 !important;
 }
 .dsl_i font {
-color: white !important;
+color: #f0f0f0 !important;
 }
 .dsl_article .dsl_definition {
 color: #FFEA13 !important;
@@ -128,48 +129,59 @@ color: #FFEA13 !important;
 
 .dsl_article .dsl_definition font[color="darkslateblue"]
 {
-  color: #E7003E !important;
+  color: #b42828 !important;
 }
 
 .dsl_article .dsl_definition font[color="darkmagenta"]
 {
-  color: #E7003E !important;
+  color: #b42828 !important;
 }
 
 .dsl_article .dsl_definition font[color="sienna"]
 {
-  color: #E7003E !important;
+  color: #b42828 !important;
 }
 
 .dsl_article .dsl_definition font[color="rosybrown"]
 {
-  color: #E7003E !important;
+  color: #b42828 !important;
 }
 
 .dsl_article .dsl_definition font[color="dimgray"]
 {
-  color: white !important;
+  color: #f0f0f0 !important;
 }
 
 .dsl_article .dsl_definition font[color="green"]
 {
-  color: #E7003E !important;
+  color: #3cb372 !important;
 }
 
 .dsl_article .dsl_definition font[color="darkgreen"]
 {
-  color: #E7003E !important;
+  color: #b42828 !important;
+}
+
+.dsl_article .dsl_definition font[color="maroon"]
+{
+  color: #b42828 !important;
+}
+
+.dsl_article .dsl_definition font[color="gray"]
+{
+  color: #3cb372;
+  color: #3cb372 !important;
 }
 
 ::selection
 {
-  background: yellow;
-	color: white;
+  background: #F39A94;
+	color: #f0f0f0;
 }
 
 code::selection
 {
-	background: white;
+	background: #60605a;
 }
 
 .dsl_s_wav img, .lsa_play img, .forvo_play img[alt="Play"]
@@ -181,7 +193,7 @@ code::selection
 
 .dsl_s_wav a, .lsa_play td:nth-of-type(1) a, .forvo_play td:nth-of-type(1) a
 {
-  color: white;
+  color: #f0f0f0;
   width: 18px;
   height: 14px;
   /**
@@ -199,14 +211,14 @@ code::selection
 
 .mdict, .mdict ol, .head-jump-pos, .head-jump-entry, .h-g, sn-gs, .sn-g, .x-gs, .xg, .rx-g, .x, .num, .def, .label-g, .collapse
 {
-  color: white !important;
+  color: #f0f0f0 !important;
 }
 
 .head-jump-pos a
 {
   display: inline-block;
   background-color: green;
-  color: white !important;
+  color: #f0f0f0 !important;
   padding-top: 2px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -220,7 +232,7 @@ code::selection
 
 .mdict .if-gs
 {
-  color: #E7003E !important;
+  color: #b42828 !important;
 }
 
 .mdict .gram-g
@@ -264,14 +276,14 @@ code::selection
 .mdict ol li::before
 {
   content: counter(step-counter);
-  color: #E7003E !important;
+  color: #b42828 !important;
   font-weight: bold;
 }
 
 /** Fix phonetics **/
 
 .mdict .phon {
-  color: #E7003E !important;
+  color: #b42828 !important;
   font-weight: bold;
 }
 
@@ -281,7 +293,7 @@ code::selection
 
 .entry, .example, .collocate, .collgloss, .sense, .neutral, .exas li
 {
-  color: white !important;
+  color: #f0f0f0 !important;
 }
 
 .hyphenation, .homnum, .frequent
@@ -306,7 +318,7 @@ code::selection
 
 .sensenum
 {
-  color: #E7003E !important;
+  color: #b42828 !important;
 }
 
 .collobox
@@ -335,9 +347,9 @@ code::selection
  */
 table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C
 {
-  color: white !important;
+  color: #f0f0f0 !important;
 }
 
 #C_C font {
-  color: white !important;
+  color: #f0f0f0 !important;
 }
