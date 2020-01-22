@@ -1,10 +1,22 @@
 MainWindow #searchPane #translateLine, MainWindow #searchPane #wordList
 {
-	background: #232534;
-	color: #6CF033;
+    font-size: 22px; font-family: "Alegreya"; 
+    padding-left: 2px;
+  background: #1E2431;
+  color: #f0f0f0;
 }
-MainWindow #translateLine, ScanPopup #translateLine, MainWindow #wordList, MainWindow #dictsPane #dictsList, MainWindow #historyPane #historyList
+MainWindow #translateLine, ScanPopup #translateLine, MainWindow #wordList, MainWindow #historyPane #historyList
 {
-	  background: #2B2F3A;
-    color: #6CF033
+    font-size: 22px; font-family: "Alegreya"; 
+    padding-left: 2px;
+     background: #1E2431;
+    color: #f0f0f0;
+}
+
+MainWindow #dictsPane #dictsList
+{
+    font-size: 22px; font-family: "Alegreya"; 
+    padding-left: 2px;
+     background: #1E2431;
+    color: #f0f0f0;
 }
