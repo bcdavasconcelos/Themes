@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ScappleDocument Version="1.1" ID="002D8F0B-6E71-4315-8CE2-C961F5238730">
     <Notes>
-        <Note ID="24" FontSize="14.0" Position="341.0,117.0" Width="42.0">
+        <Note ID="24" FontSize="29.0" Position="393.0,123.110535" Width="78.0">
             <Appearance>
                 <Alignment>Justify</Alignment>
                 <TextColor>0.964417 0.654973 0.167785</TextColor>
@@ -10,7 +10,7 @@
             </Appearance>
             <String>Text</String>
         </Note>
-        <Note ID="28" FontSize="14.0" Position="368.0,177.0" Width="42.0">
+        <Note ID="28" FontSize="14.0" Position="585.083923,142.792831" Width="42.0">
             <Appearance>
                 <Alignment>Justify</Alignment>
                 <TextColor>0.485096 0.896314 0.987996</TextColor>
@@ -20,18 +20,7 @@
             <String>Text</String>
         </Note>
     </Notes>
-    <BackgroundShapes>
-        <Shape ID="25" Sticky="Yes" Position="324.0,132.0" Width="318.2565" Height="465.97821">
-            <Appearance>
-                <Border Weight="1"></Border>
-            </Appearance>
-        </Shape>
-        <Shape ID="31" Sticky="Yes" Position="353.0,168.0" Width="257.0" Height="80.400002">
-            <Appearance>
-                <Border Weight="1"></Border>
-            </Appearance>
-        </Shape>
-    </BackgroundShapes>
+    <BackgroundShapes></BackgroundShapes>
     <AutoFit>24, 28</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="9ADD0672-6977-4B1F-9741-0C5E325D5495" Shortcut="5" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="No">
