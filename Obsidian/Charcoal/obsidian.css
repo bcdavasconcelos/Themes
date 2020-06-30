@@ -1,5 +1,5 @@
-/* Bear Ayu */
-/* bcdav 2020-06-30-14-34-58 */
+/* Bear Charcoal */
+/* bcdav 2020-06-30-13-52-41 */
 /* global */
 :root
 {
@@ -20,22 +20,22 @@
 .theme-light,
 .theme-dark 
 {
-  --background-primary:                     rgba(250, 250, 250, 1.00);
-  --background-secondary:                   rgba(250, 250, 250, 1.00); /* ribbons */
-  --background-tag:                                           #BFC1C4; /* tags */
-  --border-color:                           rgba(226, 228, 231, 1.00); /* borders */
-  --pre-code-bg:                                     rgba(0,0,0,0.03); /* block quote bg */
-  --text-accent:                              rgba(255, 106, 0, 1.00); /* links */
-  --text-faint:                                               #b1b4b8; /* icon color in ribbons */
-  --text-normal:                               rgba(84, 84, 84, 1.00); 
-  --text-selection:                            rgba(177,180,184,0.99); /* selection color */
-  --text-title-h1:                                            #ACACAD; /* header color */
-  --ul-line-color:                                               #777; /* works well */
-  --graph-note-name:                                          #4F565E;
-  --graph-node-color:                               var(--text-faint);
-  --graph-line-color:                       rgba(226, 228, 231, 1.00);
-  --graph-line-on-hover:                            var(--text-faint);
-  --hashtag-color:                                            #5F676C;
+  --background-primary:                                #2E3235;
+  --background-secondary:                              #2E3235; /* ribbons */
+  --background-tag:                                    #3F4347; /* tags */
+  --border-color:                                      #2A2A2B; /* borders */
+  --code-bg:                                           #2F3337; /* blockquote and code */
+  --text-accent:                                       #AFC3CE; /* links */
+  --text-faint:                                        #464C50; /* icon color in ribbons */
+  --text-normal:                                       #A6A6A6; 
+  --text-selection:                        rgba(79,86,94,0.99); /* selection color */
+  --text-title-h1:                                     #ACACAD; /* header color */
+  --ul-line-color:                                        #777; /* works well */
+  --graph-note-name:                        var(--text-normal);
+  --graph-node-color:                        var(--text-faint);
+  --graph-line-color:                        var(--text-faint);
+  --graph-line-on-hover:                               #4F565E;
+  --hashtag-color:                                     #5F676C;
 
   --font-size-footnote:                22px;
   --font-size-h1:                     2.1em;
@@ -66,6 +66,7 @@
   --interface-color-border:                   rgba(0,0,0,0.09); /* backlinks hover */
   --interface-color-foreground-alt:         var(--text-accent); /* header icon color */
   --interface-color-pin:                    var(--text-normal);
+  --pre-code-bg:                              rgba(0,0,0,0.09); /* block quote bg */
   --quick-switcher:                      var(--text-selection);  
   --tag-color:                              var(--text-normal); /* tags txt color */
   --text-accent-hover:                       var(--text-faint); /* url color in editor */
@@ -99,7 +100,7 @@
   --scrollbar-active-thumb-bg:                         rgba(0, 0, 0, 0.4);
   --scrollbar-bg:                                     rgba(0, 0, 0, 0.05); /* scrollbar background color */
   --background-modifier-form-field:                      rgba(0, 0, 0, 0); /* search field */
-  --background-modifier-form-field-highlighted:        rgba(0, 0, 0, 0.03); /* search field highlight*/
+  --background-modifier-form-field-highlighted:        rgba(0, 0, 0, 0.3); /* search field highlight*/
   --background-modifier-box-shadow:                    rgba(0, 0, 0, 0.3); 
   --background-modifier-cover:                         rgba(0, 0, 0, 0.6); /* ? */
   --scrollbar-thumb-bg:                                rgba(0, 0, 0, 0.2); /* sliding thumb in scrollbar */  --text-error-hover:                                             #990000; /* ? */
