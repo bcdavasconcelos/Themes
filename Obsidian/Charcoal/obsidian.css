@@ -1,5 +1,5 @@
 /* Bear Charcoal */
-/* bcdav 2020-06-30-13-52-41 */
+/* bcdav 2020-06-30-14-39-13 */
 /* global */
 :root
 {
@@ -24,13 +24,13 @@
   --background-secondary:                              #2E3235; /* ribbons */
   --background-tag:                                    #3F4347; /* tags */
   --border-color:                                      #2A2A2B; /* borders */
-  --code-bg:                                           #2F3337; /* blockquote and code */
   --text-accent:                                       #AFC3CE; /* links */
   --text-faint:                                        #464C50; /* icon color in ribbons */
   --text-normal:                                       #A6A6A6; 
   --text-selection:                        rgba(79,86,94,0.99); /* selection color */
   --text-title-h1:                                     #ACACAD; /* header color */
   --ul-line-color:                                        #777; /* works well */
+  --pre-code-bg:                              rgba(0,0,0,0.03); /* block quote bg */  
   --graph-note-name:                        var(--text-normal);
   --graph-node-color:                        var(--text-faint);
   --graph-line-color:                        var(--text-faint);
@@ -66,7 +66,6 @@
   --interface-color-border:                   rgba(0,0,0,0.09); /* backlinks hover */
   --interface-color-foreground-alt:         var(--text-accent); /* header icon color */
   --interface-color-pin:                    var(--text-normal);
-  --pre-code-bg:                              rgba(0,0,0,0.09); /* block quote bg */
   --quick-switcher:                      var(--text-selection);  
   --tag-color:                              var(--text-normal); /* tags txt color */
   --text-accent-hover:                       var(--text-faint); /* url color in editor */
@@ -1656,6 +1655,3 @@ input[type="number"] {
 .suggestion-item.is-selected {
   background-color: var(--quick-switcher);
 }
-
-
-

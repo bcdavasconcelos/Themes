@@ -1,5 +1,5 @@
 /* Ayu Mirage */
-/* bcdav 2020-06-29-20-48-50 */
+/* bcdav 2020-06-30-15-36-50 */
 /* global */
 :root
 {
@@ -18,7 +18,25 @@
 } 
 
 .theme-light,
-.theme-dark {
+.theme-dark 
+{
+  --background-primary:                            rgba(31, 35, 47, 1.00);
+  --background-secondary:                          rgba(31, 35, 47, 1.00); /* ribbons */
+  --background-tag:                                    #3B4259; /* tags */
+  --border-color:                                      rgba(53, 59, 78, 1.00); /* borders */
+  --text-accent:                                       rgba(254, 203, 102, 1.0); /* links */
+  --text-faint:                                        rgba(102, 107, 127, 1.00); /* icon color in ribbons */
+  --text-normal:                                       rgba(216, 215, 208, 1.00); 
+  --text-selection:                        rgba(40, 45, 60, 0.99); /* selection color */
+  --text-title-h1:                                     #9FA9BA; /* header color */
+  --ul-line-color:                                        #777; /* works well */
+  --pre-code-bg:                              rgba(0,0,0,0.03); /* block quote bg */  
+  --graph-note-name:                        var(--text-normal);
+  --graph-node-color:                        var(--text-faint);
+  --graph-line-color:                        var(--text-faint);
+  --graph-line-on-hover:                               #7D8AB6;
+  --hashtag-color:                                     #7D8AB6;
+
   --font-size-footnote:                22px;
   --font-size-h1:                     2.1em;
   --font-size-h2:                     1.9em;
@@ -36,68 +54,60 @@
   --line-height-footnote:             1.2em;
   --ul-line-specs:              0.9px solid;
 
-  --background-modifier-border:                        #6F7A92; /* line right below new file/new folders */
-  --background-modifier-box-shadow:         rgba(0, 0, 0, 0.3); 
-  --background-primary:                 rgba(31, 35, 47, 1.00);
-  --background-secondary-alt:           rgba(26, 29, 41, 1.00); /* app borders */
-  --background-secondary:                              #292F3E; /* sidebars */
-  --background-tag:                                    #3B4259; /* tags */
-  --blockquote-border:                                 #b57614; /* border before blockquote */
-  --border-color:                       rgba(53, 59, 78, 1.00); /* */
-  --code-block:                                        #b48ead; /* font color in code block */
-  --file-name-color:                                   #6F7A92; /* file name color */
-  --inline-code:                                       #b48ead;
-  --interactive-accent-hover:                          #fe8019; /* ? */
-  --interactive-accent-rgb:           rgba(254, 203, 102, 1.0); /* marks the active tab */
+  --background-modifier-border:              var(--text-faint); /*line below folders & inactive filename*/
+  --background-secondary-alt:                          #1A1E28; /* sidebars */
+  --blockquote-border:                      var(--text-accent); /* border before blockquote */
+  --code-block:                              var(--text-muted); /* font color in code block */
+  --file-name-color:                        var(--text-accent); /* file name color */
+  --inline-code:                             var(--text-muted);
   --interfa-color-icon:          var(--interface-color-border);
   --interface-color-action:                 var(--text-normal);
-  --interface-color-background-alt:     rgba(26, 29, 41, 1.00); /* bg for each backlink on sidebar */
-  --interface-color-background:                        #415358; /* ? */
-  --interface-color-border:                            #1e222f; /* backlinks hover */
-  --interface-color-foreground-alt:                    #FDCB66; /* header color (filename) */
-  --interface-color-foreground:                        #3e3e3e; /* ? */
+  --interface-color-background-alt:  var(--background-primary); /* bg for each backlink on sidebar */
+  --interface-color-border:                   rgba(0,0,0,0.09); /* backlinks hover */
+  --interface-color-foreground-alt:         var(--text-accent); /* header icon color */
   --interface-color-pin:                    var(--text-normal);
-  --pre-code-bg:                            rgba(0, 0, 0, 0.2); /*sm: blockq highlight; p: blockq bg */
-  --scrollbar-active-thumb-bg:              rgba(0, 0, 0, 0.4);
-  --scrollbar-bg:                          rgba(0, 0, 0, 0.05); /* scrollbar background color */
-  --scrollbar-thumb-bg:                     rgba(0, 0, 0, 0.2); /* sliding thumb color in scrollbar */
-  --text-accent-hover:                                 #5c6680; /* tags txt color in sm and hover in prev*/
-  --text-accent:                      rgba(254, 203, 102, 1.0); /* links */
-  --text-faint:                      rgba(102, 107, 127, 1.00); /* icons in app sidebars */
-  --text-highlight-bg:                  rgba(26, 29, 41, 1.00); /* backlinks highlight */
-  --text-muted:                                        #9FA9BA; /* txt color for: files, back links, bottom bar*/
-  --text-normal:                     rgba(216, 215, 208, 1.00); 
-  --text-selection:                     rgba(89, 75, 95, 0.99); /* Selection... */
-  --text-title-h1:                                     #9FA9BA;
-  --text-title-h2:                                     #9FA9BA;
-  --text-title-h3:                                     #9FA9BA;
-  --text-title-h4:                                     #9FA9BA;
-  --text-title-h5:                                     #9FA9BA;
-  --text-title-h6:                                     #9FA9BA;
-  --ul-line-color:                                        #777;
-  --vim-cursor:                                        #474949; /* line highlight */
+  --quick-switcher:                      var(--text-selection);  
+  --tag-color:                              var(--text-normal); /* tags txt color */
+  --text-accent-hover:                       var(--text-faint); /* url color in editor */
+  --text-highlight-bg:                   var(--text-selection); /* backlinks highlight */
+  --text-muted:                             var(--text-normal); /* txt color: files, backlinks, bottom bar*/
+  --text-title-h2:                        var(--text-title-h1);
+  --text-title-h3:                        var(--text-title-h1);
+  --text-title-h4:                        var(--text-title-h1);
+  --text-title-h5:                        var(--text-title-h1);  
+  --text-title-h6:                        var(--text-title-h1);
 
-  --interface-color-cross:                             #a22b26; /* red */
-  --interface-color-pencil:                            #d08f00; /* yellow */
-  --interface-color-three-dots:                        #21842e; /* green */
+  --interface-color-cross:                                        #fc3b44; /* red */
+  --interface-color-pencil:                                       #fec03e; /* yellow */
+  --interface-color-three-dots:                                   #a0e85b; /* green */
 
-  --background-accent:                                         #fff; /* ? */
-  --background-modifier-cover:                   rgba(0, 0, 0, 0.6); /* ? */
-  --background-modifier-error-hover:                        #470000; /* ? */
-  --background-modifier-error-rgb:                         61, 0, 0; /* ? */
-  --background-modifier-error:                              #3d0000; /* ? */
-  --background-modifier-form-field-highlighted:  rgba(0, 0, 0, 0.5); /* ? */
-  --background-modifier-success:                            #197300; /* ? */
-  --background-primary-alt:                                 #403f3f; /* ? */  
-  --interactive-accent:                                     #5A5B5B; /* ? */
-  --interactive-hover:                                      #fe8019; /* ? */
-  --interactive-normal:                                     #b57614; /* ? */
-  --text-error-hover:                                       #990000; /* ? */
-  --text-error:                                             #800000; /* ? */
-  --text-on-accent:                                         #FEFEFE; /* ? */
+  --background-accent:                                               #fff; /* ? */
+  --background-modifier-error-hover:                              #470000; /* ? */
+  --background-modifier-error-rgb:                               61, 0, 0; /* ? */
+  --background-modifier-error:                                    #3d0000; /* ? */
+  --background-modifier-success:                                  #197300; /* ? */
+  --background-primary-alt:                                       #403f3f; /* ? */  
+  --interactive-accent-hover:                       var(--background-tag); /* ? */
+  --interactive-accent:                             var(--background-tag); /* button color */
+  --interactive-hover:                              var(--background-tag); /* ? */
+  --interactive-normal:                             var(--background-tag); /* ? */
+  --interface-color-background:                                   #415358; /* ? */
+  --interface-color-foreground:                                   #3e3e3e; /* ? */
+  --text-error:                                                   #800000; /* ? */
+  --text-on-accent:                                               #FEFEFE; /* ? */
 
+  --scrollbar-active-thumb-bg:                         rgba(0, 0, 0, 0.4);
+  --scrollbar-bg:                                     rgba(0, 0, 0, 0.05); /* scrollbar background color */
+  --background-modifier-form-field:                      rgba(0, 0, 0, 0); /* search field */
+  --background-modifier-form-field-highlighted:        rgba(0, 0, 0, 0.3); /* search field highlight*/
+  --background-modifier-box-shadow:                    rgba(0, 0, 0, 0.3); 
+  --background-modifier-cover:                         rgba(0, 0, 0, 0.6); /* ? */
+  --scrollbar-thumb-bg:                                rgba(0, 0, 0, 0.2); /* sliding thumb in scrollbar */  --text-error-hover:                                             #990000; /* ? */
 
+/*   --interactive-accent-rgb:  */                                     /* ? */
+/*   --vim-cursor:                                        #474949; */ /* line highlight */
 }
+
 /* better use rgba color for all color var ended with `bg`*/
 
 
@@ -176,7 +186,6 @@
   background-color: var(--background-secondary-alt);
   border-top: 0px;
 }
-
 
 .document-search-container{
   border-top: 0px;
@@ -281,18 +290,13 @@ a.tag {
 }
 
 .cm-s-obsidian span.cm-hashtag {
-  color: var(--text-normal) !important;
+  color: var(--tag-color)!important;
 }
 
 span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
-  color: #6F7A92 !important;
+  color: var(--hashtag-color) !important;
 }
 
-/* 
-span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1 {
-  color: #705dcf;
-}
- */
 
 /*footnote*/
 .cm-s-obsidian pre.HyperMD-footnote
@@ -308,7 +312,7 @@ span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-head
 }
 
 .cm-s-obsidian pre.HyperMD-footnote span.cm-hmd-footnote,
-.cm-s-obsidian span.cm-footref,  {
+.cm-s-obsidian span.cm-footref {
   color: var(--text-accent) !important; 
 }
 
@@ -342,7 +346,7 @@ span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-head
 
 /* set the text selection color for preview mode */
 ::selection {
-  background-color: var(--text-selection);
+  background-color: var(--text-selection)!important;
 } 
 
 
@@ -564,7 +568,8 @@ img:hover {
 pre code {
   font-family: var(--font-family-code) !important;
   font-size: var(--font-size-code) !important;
-  padding: 6px !important;
+  background-color: var(--pre-code-bg)!important;
+  padding: 1em !important;
   line-height: normal;
   display: block;
   color: var(--code-block)  !important;
@@ -697,7 +702,7 @@ code{
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code)
 {
-  background-color: var(--pre-code-bg);
+  background-color: var(--pre-code-bg) !important;
   color: var(--inline-code) !important;
   bottom: 0px !important;
 }
@@ -710,6 +715,7 @@ code{
   padding: 1px !important;
   display: block;
   color: var(--code-block) !important;
+  background-color: var(--pre-code-bg)!important;
   font-weight: 500;
 }
 
@@ -742,7 +748,7 @@ code{
 
 
 .cm-s-obsidian span.cm-formatting-link {
-  color: var(--text-accent) !important;
+  color: var(--text-faint) !important;
 }
 
 
@@ -752,24 +758,23 @@ code{
 
 
 /* for editor */
+
 .cm-quote {
-  background-color: var(--pre-code-bg);
+  background-color: var(--pre-code-bg)!important;
   color: var(--text-normal) !important;
-  font-style: italic;
   font-size: var(--font-size-blockquote);
 }
 
-
 /* for preview */
 .markdown-preview-view blockquote {
-  background-color: var(--pre-code-bg);
+  background-color: var(--pre-code-bg)!important;
   border: 0px solid;
   border-color: var(--blockquote-border) !important;
   border-left-width: 4px !important;
   border-radius: 0 8px 8px 0;
   line-height: 1em;
   margin: 0 10% 0 10%;
-  font-style: italic;
+/*   font-style: italic; */
   font-size: var(--font-size-blockquote);
 }
 
@@ -908,6 +913,7 @@ thead {
 }
 
 
+
 /*backlink pane*/
 .workspace-leaf-content[data-type="backlink"] .view-content{
   background-color: var(--background-secondary);
@@ -961,28 +967,30 @@ color: var(--text-accent) !important;
 .graph-view.color-fill-highlight,
 .graph-view.color-line-highlight
 {
-    color: var(--text-accent) !important;    
+    color: var(--graph-line-on-hover)!important; /* line color on hover */
 }
 
 
 .graph-view.color-text
 {
-    color: var(--text-normal) !important;
+    color: var(--graph-note-name)!important; /* note name (with/without hover) */
+    font-size: 2em !important;
+    font-weight: 600 !important;
 }
 
 
 .graph-view.color-line {
-    color: var(--text-accent-hover);
+    color: var(--graph-line-color) !important; /* line color */
 }
 
 
 .graph-view.color-fill{
-    color: var(--text-muted);
+    color: var(--graph-node-color)!important; /* node color */
 }
 
 
 .workspace-leaf-content[data-type = "graph"] .view-content{
-  background-color: var(--background-primary);
+  background-color: var(--background-primary); /* background */ 
 }
 
 
@@ -1074,7 +1082,6 @@ color: var(--text-accent) !important;
 .view-header-title, .view-header-icon, .view-action{
   color: var(--background-modifier-border) !important;
 }
-
 
 
 /**************************************/
@@ -1305,8 +1312,8 @@ disable the scrollbar for main-container
 .view-action > svg.vertical-three-dots,
 .view-action > svg.pencil,
 .view-action > svg.lines-of-text {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   padding: 5.5px;
   border-radius: 100px;
 }
@@ -1341,9 +1348,9 @@ disable the scrollbar for main-container
 .view-action:hover > svg.vertical-three-dots,
 .view-action:hover > svg.pencil,
 .view-action:hover > svg.lines-of-text {
-  width: 23px;
-  height: 23px;
-  padding: 2.5px;
+  width: 30px;
+  height: 30px;
+  padding: 4.5px;
   border-radius: 100px;
   color: var(--interfa-color-icon);
   transition: width, height 0.2s;
@@ -1473,6 +1480,7 @@ disable the scrollbar for main-container
   left: -2px;
   top: -2px;
 }
+
 .search-result-container {
   padding: 0px;
 }
@@ -1609,3 +1617,44 @@ content: "###### ";
 font-size: var(--header-before-size-h6);
 color: var(--header-before-color);
 }
+
+
+/* Make subtler folding gutter arrows */
+.CodeMirror-foldgutter-folded:after, .CodeMirror-foldgutter-open:after {
+    opacity: 0.3;
+    font-size: 140%;
+    position: relative;
+    top: 10px;
+}
+
+.CodeMirror-foldgutter-folded:hover:after, .CodeMirror-foldgutter-open:hover:after {
+    opacity: 1;
+}
+
+.CodeMirror-foldgutter-folded:after {
+    content: "\25BA";    
+}
+
+.CodeMirror-foldgutter-open:after {
+    content: "\25BC";    
+}
+
+
+/* search box color */
+/* 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  background: white!important;
+}
+ */
+
+
+/* quick switcher */
+.suggestion-item.is-selected {
+  background-color: var(--quick-switcher);
+}
+
+
+
