@@ -3,7 +3,7 @@
 
 ## Obsidian Ayu Light
 
-![](Ayu Light/ayu2.png)  
+![](/Obsidian/Ayu Light/ayu2.png)  
 
 ## Obsidian Ayu Mirage
 
