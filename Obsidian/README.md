@@ -11,7 +11,7 @@
 
 ## Obsidian Charcoal
 
-![](charcoal.png)
+![](/Charcoa/charcoal.png)
 
 ## Dark Graphite
 
