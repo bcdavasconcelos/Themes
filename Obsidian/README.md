@@ -11,7 +11,7 @@
 
 ## Obsidian Charcoal
 
-![](/Charcoa/charcoal.png)
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Charcoal/charcoal.png?raw=true)
 
 ## Dark Graphite
 
