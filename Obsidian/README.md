@@ -1,22 +1,22 @@
 # Obsidian Themes
 
 
-## Obsidian Ayu Light
+## Obsidian Ayu Light  
 
-![](/Ayu Light/ayu2.png)
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Ayu%20Light/ayu2.png?raw=true)
 
 ## Obsidian Ayu Mirage
 
-![](ayu1.png)
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Ayu%20Mirage/ayu1.png?raw=true.png)
 
 ## Obsidian Charcoal
 
-![](charcoal.png)
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Charcoal/charcoal.png?raw=true)
 
 ## Dark Graphite
 
-![](graphite.png)
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Graphite/graphite.png?raw=true)
 
 ## Panic Room
 
-![](panic.png)
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Panic%20Room/panic.png?raw=true)
