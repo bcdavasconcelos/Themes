@@ -24,3 +24,6 @@
 ## Even Less
 
 ![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Even%20Less/evenless.png?raw=true)
+
+## GDCT
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/GDCT/gdct.png?raw=true)
