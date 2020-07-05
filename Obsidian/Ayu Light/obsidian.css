@@ -1,5 +1,6 @@
-/* GDCT */
-/* 2020-07-05-13-40-59 */
+/* Ayu Mirage */
+/* bcdav 2020-07-05-15-32-26 */
+
 /* global */
 
 :root
@@ -450,7 +451,7 @@ font-weight: 600;
 
 /* emphasis in preview and editor */
 em, .cm-em {
-color: var(--text-muted);
+/* color: var(--text-muted); */
 font-style: italic;
 }
 
@@ -808,9 +809,10 @@ background-color: var(--text-selection) !important;
 /* Brackets */
 /***************************************/
 
-
+.cm-s-obsidian span.cm-formatting-em,
+.cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-formatting-link {
-color: var(--text-faint) !important;
+color: var(--header-before-color) !important;
 }
 
 
@@ -985,14 +987,42 @@ border-top-right-radius: 0 !important;
 background-color: var(--background-secondary);
 }
 
+.tag-pane-tag-count {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}
 
 .workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
 .workspace-leaf-content[data-type="tag"] .tag-pane-tag-text { 
 font-size: var(--font-medium)!important;
-line-height: 1.2em;
+line-height: 1em;
+padding-bottom: 2px;
+padding-top: 2px;
+
+padding-left: 8px;
+padding-right: 8px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+
+padding-left: 8px;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+
+padding-right: 8px;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+
+color: var(--tag-text-color)!important;
+background: var(--tag-bg)!important;
 }
 
-
+.pane-clickable-item:hover {
+background: inherit!important;
+}
+  
 .workspace-leaf-content[data-type="backlink"] .search-result-file-matches {
 font-size: var(--font-size-side-dock);
 }
@@ -1663,8 +1693,6 @@ background: white!important;
 .suggestion-item.is-selected {
 background-color: var(--quick-switcher);
 }
-
-
 
 
 /* side ribbon */
