@@ -61,7 +61,7 @@
 	
 --graph-note-name:	var(--text-normal);
 --graph-node-color:	var(--text-faint);
---graph-line-color:	var(--text-faint);
+--graph-line-color:	rgb(48, 47, 48);
 --graph-line-on-hover:	#4F565E;
 --hashtag-color:	#4c535a;
 --border-color:	#1f1f20;
