@@ -17,13 +17,14 @@
 
 ![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Graphite/graphite.png?raw=true)
 
-## Panic Room
+## Panic Mode
 
-![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Panic%20Room/panic.png?raw=true)
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Panic%20Mode/panic.png?raw=true)
 
-## Even Less
-
-![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Even%20Less/evenless.png?raw=true)
 
 ## GDCT
 ![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/GDCT/gdct.png?raw=true)
+
+
+## GDCT Light
+![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/GDCT%20Light/gdct.png?raw=true)
