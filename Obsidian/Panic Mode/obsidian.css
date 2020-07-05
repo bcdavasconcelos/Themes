@@ -1,5 +1,5 @@
-/* GDCT Light */
-/* bcdav 2020-07-05-17-05-23 */
+/* Panic Mode */
+/* bcdav 2020-07-05-18-19-57 */
 
 /* global */
 
@@ -24,11 +24,11 @@
 .theme-light,
 .theme-dark 
 {
---background-primary:	rgb(254,254,254);
---background-primary-alt:	rgba(0,0,0,0.04);
---background-secondary:	rgb(254,254,254);
+--background-primary:	#0e141e;
+--background-primary-alt:	rgba(0,0,0,0.08);
+--background-secondary:	#080b0f;
 --background-secondary-alt:	var(--background-secondary); 
---background-accent:	rgba(0,0,0,0.04);
+--background-accent:	rgba(0,0,0,0.08);
 --background-modifier-border:	var(--text-faint);
 --background-modifier-form-field:	var(--background-primary);
 --background-modifier-form-field-highlighted:	var(--background-primary);
@@ -39,19 +39,19 @@
 --background-modifier-error-hover:	#470000;
 --background-modifier-cover:	rgba(0, 0, 0, 0.6);
 	
---text-accent:	#C15E50;
+--text-accent:	#46b4d3;
 --text-accent-hover:	var(--text-faint);
---text-normal:	#27384B;
---text-muted:	#828282;
---text-faint:	#828282;
+--text-normal:	#f4f6e9;
+--text-muted:	#a1a1a1;
+--text-faint:	#a1a1a1;
 --text-error:	#800000;
 --text-error-hover:	#990000;
 --text-highlight-bg:	var(--text-selection);
---text-selection:	rgba(232, 167, 165, 0.50);
+--text-selection:	rgba(80, 102, 130, 0.50);
 --text-on-accent:	var(--text-normal);
 --interactive-normal:	var(--background-primary);
---interactive-hover:	rgba(0,0,0,0.02);
---interactive-accent:	rgba(0,0,0,0.09);
+--interactive-hover:	rgba(0,0,0,0.05);
+--interactive-accent:	rgba(0,0,0,0.1);
 --interactive-accent-rgb:	72, 54, 153;
 --interactive-accent-hover:	var(--text-selection);
 --scrollbar-active-thumb-bg:	rgba(0, 0, 0, 0.1);
@@ -60,27 +60,27 @@
 	
 	
 --graph-note-name:	var(--text-normal);
---graph-node-color:	var(--text-accent);
---graph-line-color:	var(--header-before-color);
---graph-line-on-hover:	var(--text-accent);
---hashtag-color:	var(--background-primary);
---border-color:	rgba(0,0,0,0.1);
+--graph-node-color:	var(--header-before-color);
+--graph-line-color:	#282c3c;
+--graph-line-on-hover:	var(--header-before-color);
+--hashtag-color:	var(--text-normal);
+--border-color:	#090b0d;
 	
---blockquote-border:	var(--text-selection);
---pre-code-bg:	rgb(250,250,250);
+--blockquote-border:	var(--text-accent);
+--pre-code-bg:	#121826;
 --code-block:	var(--text-muted); 
 --file-name-color:	var(--text-accent);
 --inline-code:	var(--text-muted);
 --interfa-color-icon:	var(--interface-color-border);
 --interface-color-action:	var(--text-normal);
 --interface-color-background-alt:	var(--background-primary);
---interface-color-border:	rgba(0,0,0,0.03);
+--interface-color-border:	rgba(250,250,250,0.045);
 --interface-color-foreground-alt:	var(--text-accent);
 --interface-color-pin:	var(--text-normal);
 --quick-switcher:	var(--text-selection); 
 	
 	
---text-title-h1:	#27384B;
+--text-title-h1:	#f6a82a;
 --text-title-h2:	var(--text-title-h1);
 --text-title-h3:	var(--text-title-h1);
 --text-title-h4:	var(--text-title-h1);
@@ -90,14 +90,14 @@
 	
 --link-text:	var(--text-accent);
 --link-bg:	;
---link-text-hover:	var(--background-primary);
---link-bg-hover:	var(--text-accent);
+--link-text-hover:	var(--text-accent);
+--link-bg-hover:	;
 	
---hashtag-color:	var(--background-primary);
---tag-text-color:	var(--background-primary);
---tag-bg:	var(--text-normal);
---tag-text-hover:	inherit;
---tag-bg-hover:	inherit;
+--hashtag-color:	var(--text-normal);
+--tag-text-color:	var(--text-normal);
+--tag-bg:	#5c34ae;
+--tag-text-hover:	var(--text-normal);
+--tag-bg-hover:	#5c34ae;
 	
 --interface-color-cross:	#fc3b44;
 --interface-color-pencil:	#fec03e;
@@ -125,9 +125,9 @@
 --line-height-footnote:	1.2em;
 --ul-line-specs:	0.9px solid;
 --vim-cursor:	#474949;
---header-before-color:	rgba(200,200,200,1);
+--header-before-color:	#a77e32;
 --blockquote-bg:	var(--background-primary);
---bracket-color:	rgba(200,200,200,1);
+--bracket-color:	var(--header-before-color);
 }
 
 

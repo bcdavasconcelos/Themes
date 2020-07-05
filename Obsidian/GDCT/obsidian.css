@@ -1,5 +1,6 @@
-/* GDCT */
-/* bcdav 2020-07-05-13-39-01 */
+/* Dark Graphite */
+/* bcdav 2020-07-05-17-05-23 */
+
 /* global */
 
 :root
@@ -23,11 +24,11 @@
 .theme-light,
 .theme-dark 
 {
---background-primary:	rgb(64,63,63);
---background-primary-alt:	rgba(0,0,0,0.04);
---background-secondary:	rgb(64,63,63);
+--background-primary:	#313030;
+--background-primary-alt:	rgba(0,0,0,0.08);
+--background-secondary:	#313030;
 --background-secondary-alt:	var(--background-secondary); 
---background-accent:	rgba(0,0,0,0.04);
+--background-accent:	rgba(0,0,0,0.08);
 --background-modifier-border:	var(--text-faint);
 --background-modifier-form-field:	var(--background-primary);
 --background-modifier-form-field-highlighted:	var(--background-primary);
@@ -38,19 +39,19 @@
 --background-modifier-error-hover:	#470000;
 --background-modifier-cover:	rgba(0, 0, 0, 0.6);
 	
---text-accent:	#69B8DE;
+--text-accent:	#3daddb;
 --text-accent-hover:	var(--text-faint);
---text-normal:	#FFFDFA;
---text-muted:	#828282;
---text-faint:	#828282;
+--text-normal:	#fffdf9;
+--text-muted:	#6f6f6f;
+--text-faint:	#6f6f6f;
 --text-error:	#800000;
 --text-error-hover:	#990000;
 --text-highlight-bg:	var(--text-selection);
---text-selection:	rgba(123, 124, 127, 0.50);
+--text-selection:	rgba(250,250,250,0.045);
 --text-on-accent:	var(--text-normal);
 --interactive-normal:	var(--background-primary);
---interactive-hover:	rgba(0,0,0,0.02);
---interactive-accent:	rgba(0,0,0,0.09);
+--interactive-hover:	rgba(0,0,0,0.05);
+--interactive-accent:	rgba(0,0,0,0.1);
 --interactive-accent-rgb:	72, 54, 153;
 --interactive-accent-hover:	var(--text-selection);
 --scrollbar-active-thumb-bg:	rgba(0, 0, 0, 0.1);
@@ -59,27 +60,27 @@
 	
 	
 --graph-note-name:	var(--text-normal);
---graph-node-color:	var(--border-color);
---graph-line-color:	var(--border-color);
---graph-line-on-hover:	var(--text-accent);
---hashtag-color:	var(--tag-text-color);
---border-color:	#777777;
+--graph-node-color:	var(--tag-bg);
+--graph-line-color:	var(--header-before-color);
+--graph-line-on-hover:	var(--tag-bg);
+--hashtag-color:	var(--background-primary);
+--border-color:	#6f6f6f;
 	
 --blockquote-border:	var(--text-accent);
---pre-code-bg:	0
+--pre-code-bg:	#1b1b1a;
 --code-block:	var(--text-muted); 
 --file-name-color:	var(--text-accent);
 --inline-code:	var(--text-muted);
 --interfa-color-icon:	var(--interface-color-border);
 --interface-color-action:	var(--text-normal);
 --interface-color-background-alt:	var(--background-primary);
---interface-color-border:	rgba(0,0,0,0.03);
+--interface-color-border:	rgba(250,250,250,0.045);
 --interface-color-foreground-alt:	var(--text-accent);
 --interface-color-pin:	var(--text-normal);
 --quick-switcher:	var(--text-selection); 
 	
 	
---text-title-h1:	#FFFDFA;
+--text-title-h1:	#fffdf9;
 --text-title-h2:	var(--text-title-h1);
 --text-title-h3:	var(--text-title-h1);
 --text-title-h4:	var(--text-title-h1);
@@ -92,11 +93,11 @@
 --link-text-hover:	var(--background-primary);
 --link-bg-hover:	var(--text-accent);
 	
---hashtag-color:	var(--tag-text-color);
---tag-text-color:	var(--text-muted);
---tag-bg:	;
+--hashtag-color:	var(--background-primary);
+--tag-text-color:	var(--background-primary);
+--tag-bg:	var(--text-muted);
 --tag-text-hover:	var(--background-primary);
---tag-bg-hover:	#FFFDFA;
+--tag-bg-hover:	var(--text-muted);
 	
 --interface-color-cross:	#fc3b44;
 --interface-color-pencil:	#fec03e;
@@ -124,8 +125,10 @@
 --line-height-footnote:	1.2em;
 --ul-line-specs:	0.9px solid;
 --vim-cursor:	#474949;
---header-before-color:	#777777;
---blockquote-bg:	;
+--header-before-color:	#4c535a;
+--blockquote-bg:	var(--background-primary);
+--bracket-color:	var(--header-before-color);
+
 }
 
 
@@ -207,7 +210,7 @@ font-style: italic;
 .cm-s-obsidian span.cm-hashtag-begin, 
 .cm-s-obsidian span.cm-hashtag-end,
 a.tag {
-color: var(--tag-text-color)!important;
+color: var(--tag-text-color) !important;
 background-color: var(--tag-bg) !important;
 font-family: var(--font-family) !important;
 font-size: 1em;
@@ -221,7 +224,6 @@ padding-top: 0.5px;
 /* -- BEAR TAGS --- */
 /* ---------------- */
 
-/* 
 a.tag {
 padding-left: 8px;
 padding-right: 8px;
@@ -247,7 +249,6 @@ border-bottom-right-radius: 8px;
 color: var(--tag-text-color)!important;
 background: var(--tag-bg)!important;
 }
- */
 
 span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
 color: var(--hashtag-color)!important;
@@ -452,7 +453,7 @@ font-weight: 600;
 
 /* emphasis in preview and editor */
 em, .cm-em {
-color: var(--text-muted);
+/* color: var(--text-muted); */
 font-style: italic;
 }
 
@@ -810,9 +811,10 @@ background-color: var(--text-selection) !important;
 /* Brackets */
 /***************************************/
 
-
+.cm-s-obsidian span.cm-formatting-em,
+.cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-formatting-link {
-color: var(--text-faint) !important;
+color: var(--bracket-color)!important;
 }
 
 
@@ -987,14 +989,42 @@ border-top-right-radius: 0 !important;
 background-color: var(--background-secondary);
 }
 
+.tag-pane-tag-count {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}
 
 .workspace-leaf-content[data-type="tag"] .tag-pane-tag-count,
 .workspace-leaf-content[data-type="tag"] .tag-pane-tag-text { 
 font-size: var(--font-medium)!important;
-line-height: 1.2em;
+line-height: 1em;
+padding-bottom: 2px;
+padding-top: 2px;
+
+padding-left: 8px;
+padding-right: 8px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+
+padding-left: 8px;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+
+padding-right: 8px;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+
+color: var(--tag-text-color)!important;
+background: var(--tag-bg)!important;
 }
 
-
+.pane-clickable-item:hover {
+background: inherit!important;
+}
+  
 .workspace-leaf-content[data-type="backlink"] .search-result-file-matches {
 font-size: var(--font-size-side-dock);
 }
@@ -1665,8 +1695,6 @@ background: white!important;
 .suggestion-item.is-selected {
 background-color: var(--quick-switcher);
 }
-
-
 
 
 /* side ribbon */
