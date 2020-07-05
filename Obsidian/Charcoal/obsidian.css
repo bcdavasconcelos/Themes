@@ -26,7 +26,7 @@
 {
 --background-primary:	#222527;
 --background-primary-alt:	rgba(0,0,0,0.08);
---background-secondary:	#222527;
+--background-secondary:	#1c1e21;
 --background-secondary-alt:	var(--background-secondary); 
 --background-accent:	rgba(0,0,0,0.08);
 --background-modifier-border:	var(--text-faint);
@@ -42,8 +42,8 @@
 --text-accent:	#9bb7c5;
 --text-accent-hover:	var(--text-faint);
 --text-normal:	#959595;
---text-muted:	#353b3f;
---text-faint:	#353b3f;
+--text-muted:	rgb(109, 109, 109);
+--text-faint:	rgb(109, 109, 109);
 --text-error:	#800000;
 --text-error-hover:	#990000;
 --text-highlight-bg:	var(--text-selection);
