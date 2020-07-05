@@ -1,4 +1,4 @@
-/* Ayu Mirage */
+/* Charcoal */
 /* bcdav 2020-07-05-15-32-26 */
 
 /* global */
@@ -74,7 +74,7 @@
 --interfa-color-icon:	var(--interface-color-border);
 --interface-color-action:	var(--text-normal);
 --interface-color-background-alt:	var(--background-primary);
---interface-color-border:	rgba(250,250,250,0.045)
+--interface-color-border:	rgba(250,250,250,0.045);
 --interface-color-foreground-alt:	var(--text-accent);
 --interface-color-pin:	var(--text-normal);
 --quick-switcher:	var(--text-selection); 
