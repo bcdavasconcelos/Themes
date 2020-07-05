@@ -68,7 +68,7 @@
 	
 --blockquote-border:	var(--text-accent);
 --pre-code-bg:	#22262a;
---code-block:	var(--text-muted); 
+--code-block:	#868787;
 --file-name-color:	var(--text-accent);
 --inline-code:	var(--text-muted);
 --interfa-color-icon:	var(--interface-color-border);
@@ -126,7 +126,8 @@
 --ul-line-specs:	0.9px solid;
 --vim-cursor:	#474949;
 --header-before-color:	#2f3337;
---blockquote-bg:	var(--background-primary);}
+--blockquote-bg:	var(--background-primary);
+}
 
 
 /*-------------------------------------*/

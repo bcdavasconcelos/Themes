@@ -1,5 +1,5 @@
-/* Dark Graphite */
-/* bcdav 2020-07-05-17-05-23 */
+/* GDCT Dark */
+/* bcdav 2020-07-05-15-32-26 */
 
 /* global */
 
@@ -67,7 +67,7 @@
 --border-color:	#6f6f6f;
 	
 --blockquote-border:	var(--text-accent);
---pre-code-bg:	#1b1b1a;
+--pre-code-bg:	rgba(0,0,0,0.001);
 --code-block:	var(--text-muted); 
 --file-name-color:	var(--text-accent);
 --inline-code:	var(--text-muted);
@@ -128,7 +128,6 @@
 --header-before-color:	#4c535a;
 --blockquote-bg:	var(--background-primary);
 --bracket-color:	var(--header-before-color);
-
 }
 
 
@@ -814,7 +813,7 @@ background-color: var(--text-selection) !important;
 .cm-s-obsidian span.cm-formatting-em,
 .cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-formatting-link {
-color: var(--bracket-color)!important;
+color: var(--header-before-color) !important;
 }
 
 
