@@ -635,7 +635,8 @@ background-color: var(--pre-code-bg)!important;
 padding: 1em !important;
 line-height: normal;
 display: block;
-color: var(--code-block) !important;
+color: var(--code-block)!important;
+border: 2px solid #2f3338!important;
 }
 
 
@@ -784,11 +785,9 @@ font-weight: 500;
 
 
 /*remove the border of codeblock in editor */
-/* 
 .HyperMD-codeblock-bg{
-border: 0px !important;
+border: 5px !important;
 }
- */
 
 
 /*an active line highlight in vim normal mode 
