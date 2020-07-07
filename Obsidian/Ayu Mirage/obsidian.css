@@ -15,9 +15,9 @@
 --font-medium: 21px;
 --line-height-preview: 1.7em;
 --line-height-header-preview: 2em;
---font-family-mdpreview: Source Sans Pro;
+--font-family-mdpreview: Gentium, Alegreya, Source Sans Pro;
 --font-family-editor: Menlo;
---font-family-preview: Source Sans Pro;
+--font-family-preview: Gentium, Alegreya, Source Sans Pro;
 --font-family-code: Cousine;
 } 
 
@@ -51,7 +51,7 @@
 --text-on-accent:	var(--text-normal);
 --interactive-normal:	var(--background-primary);
 --interactive-hover:	rgba(0,0,0,0.05);
---interactive-accent:	rgba(0,0,0,0.1);
+--interactive-accent:	var(--tag-bg);
 --interactive-accent-rgb:	72, 54, 153;
 --interactive-accent-hover:	var(--text-selection);
 --scrollbar-active-thumb-bg:	rgba(0, 0, 0, 0.1);
@@ -125,9 +125,14 @@
 --line-height-footnote:	1.2em;
 --ul-line-specs:	0.9px solid;
 --vim-cursor:	#474949;
---header-before-color:	#707A92;
+--header-before-color:	var(--tag-bg);
 --blockquote-bg:	var(--background-primary);
+--bracket-color:	var(--header-before-color);
+--checkbox-color:	var(--tag-bg);
+--checkbox-enabled:	var(--file-name-color);
+--active-title-border:	var(--interactive-accent);
 }
+
 
 
 /*-------------------------------------*/
@@ -812,7 +817,7 @@ background-color: var(--text-selection) !important;
 .cm-s-obsidian span.cm-formatting-em,
 .cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-formatting-link {
-color: var(--header-before-color) !important;
+color: var(--bracket-color)!important;
 }
 
 
@@ -907,8 +912,61 @@ box-shadow: 0 0 0.1em var(--text-muted);
 
 
 .checkbox-container {
-background-color: var(--background-primary);
+background-color: var(--checkbox-color);
 }
+
+.checkbox-container {
+  cursor: pointer;
+  border-radius: 14px;
+  display: inline-block;
+  height: 22px;
+  position: relative;
+  top: 4px;
+  user-select: none;
+  width: 42px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+  transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border 0.15s ease-in-out, opacity 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+
+.checkbox-container.is-enabled {
+  background-color: var(--checkbox-enabled);
+}
+.checkbox-container.is-enabled:after {
+  transform: translate3d(19px, 0, 0);
+}
+.checkbox-container.is-enabled:active:after {
+  left: -4px;
+}
+.checkbox-container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.checkbox-container:after {
+  pointer-events: none;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  margin: 3px;
+  border-radius: 9px;
+  transition: transform 0.15s ease-in-out, width 0.1s ease-in-out, left 0.1s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  left: 0;
+  transform: translate3d(3px, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.checkbox-container:active:after {
+  width: 20px;
+  }
+  
 
 
 /***************************************/
@@ -1128,7 +1186,7 @@ background: linear-gradient(to bottom, transparent, var(--background-primary)) !
 
 .theme-dark .workspace-leaf.mod-active .view-header {
 background-color: var(--background-secondary-alt) !important; 
-border-top: 0px solid var(--interactive-accent) !important;
+border-top: 0px solid var(--active-title-border)!important;
 border-bottom: 1px solid var(--border-color) !important;
 }
 
@@ -1236,7 +1294,7 @@ padding-top: 5px;
 /* active titles have different border colours */
 .theme-light .workspace-leaf.mod-active .view-header {
 background-color: var(--background-secondary-alt) !important; 
-border-right: 3px solid var(--interactive-accent) !important;
+border-right: 3px solid var(--active-title-border) !important;
 border-left: 0px;
 border-bottom: none;
 }
@@ -1568,7 +1626,7 @@ background-color: var(--interface-color-border);
 
 .workspace-leaf.mod-active .view-header {
 background-color: var(--background-secondary);
-border-bottom: 2px solid var(--interactive-accent);
+border-bottom: 2px solid var(--active-title-border);
 }
 
 
@@ -1720,4 +1778,9 @@ color: var(--text-accent);
   cursor: pointer;
   position: relative;
   white-space: nowrap;
+}
+
+
+.markdown-preview-view {
+  background-color: var(--background-primary-alt)!important;
 }

@@ -1,5 +1,5 @@
 /* Panic Mode */
-/* bcdav 2020-07-05-18-19-57 */
+/* bcdav 2020-07-06-22-58-42 */
 
 /* global */
 
@@ -15,23 +15,23 @@
 --font-medium: 21px;
 --line-height-preview: 1.7em;
 --line-height-header-preview: 2em;
---font-family-mdpreview: Source Sans Pro;
+--font-family-mdpreview: Gentium, Alegreya, Source Sans Pro;
 --font-family-editor: Menlo;
---font-family-preview: Source Sans Pro;
+--font-family-preview: Gentium, Alegreya, Source Sans Pro;
 --font-family-code: Cousine;
 } 
 
 .theme-light,
 .theme-dark 
 {
---background-primary:	#0e141e;
---background-primary-alt:	rgba(0,0,0,0.08);
---background-secondary:	#080b0f;
+--background-primary:	rgba(21, 30, 45,1);
+--background-primary-alt:	rgba(14, 20, 30,1);
+--background-secondary: rgba(16, 22, 30,1);
 --background-secondary-alt:	var(--background-secondary); 
 --background-accent:	rgba(0,0,0,0.08);
 --background-modifier-border:	var(--text-faint);
 --background-modifier-form-field:	var(--background-primary);
---background-modifier-form-field-highlighted:	var(--background-primary);
+--background-modifier-form-field-highlighted:	var(--tag-bg);
 --background-modifier-box-shadow:	rgba(0, 0, 0, 0.3);
 --background-modifier-success:	rgba(160,232,92,0.08);
 --background-modifier-error:	#3d0000;
@@ -41,7 +41,7 @@
 	
 --text-accent:	#46b4d3;
 --text-accent-hover:	var(--text-faint);
---text-normal:	#f4f6e9;
+--text-normal:	rgba(224, 226, 213,0.95); 
 --text-muted:	#a1a1a1;
 --text-faint:	#a1a1a1;
 --text-error:	#800000;
@@ -128,6 +128,9 @@
 --header-before-color:	#a77e32;
 --blockquote-bg:	var(--background-primary);
 --bracket-color:	var(--header-before-color);
+--checkbox-color: var(--file-name-color);
+--checkbox-enabled: var(--tag-bg);
+--active-title-border: var(--interactive-accent);
 }
 
 
@@ -908,8 +911,61 @@ box-shadow: 0 0 0.1em var(--text-muted);
 
 
 .checkbox-container {
-background-color: var(--background-primary);
+background-color: var(--checkbox-color);
 }
+
+.checkbox-container {
+  cursor: pointer;
+  border-radius: 14px;
+  display: inline-block;
+  height: 22px;
+  position: relative;
+  top: 4px;
+  user-select: none;
+  width: 42px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+  transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border 0.15s ease-in-out, opacity 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+
+.checkbox-container.is-enabled {
+  background-color: var(--checkbox-enabled);
+}
+.checkbox-container.is-enabled:after {
+  transform: translate3d(19px, 0, 0);
+}
+.checkbox-container.is-enabled:active:after {
+  left: -4px;
+}
+.checkbox-container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.checkbox-container:after {
+  pointer-events: none;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  margin: 3px;
+  border-radius: 9px;
+  transition: transform 0.15s ease-in-out, width 0.1s ease-in-out, left 0.1s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  left: 0;
+  transform: translate3d(3px, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.checkbox-container:active:after {
+  width: 20px;
+  }
+  
 
 
 /***************************************/
@@ -1129,7 +1185,7 @@ background: linear-gradient(to bottom, transparent, var(--background-primary)) !
 
 .theme-dark .workspace-leaf.mod-active .view-header {
 background-color: var(--background-secondary-alt) !important; 
-border-top: 0px solid var(--interactive-accent) !important;
+border-top: 0px solid var(--active-title-border)!important;
 border-bottom: 1px solid var(--border-color) !important;
 }
 
@@ -1237,7 +1293,7 @@ padding-top: 5px;
 /* active titles have different border colours */
 .theme-light .workspace-leaf.mod-active .view-header {
 background-color: var(--background-secondary-alt) !important; 
-border-right: 3px solid var(--interactive-accent) !important;
+border-right: 3px solid var(--active-title-border) !important;
 border-left: 0px;
 border-bottom: none;
 }
@@ -1569,7 +1625,7 @@ background-color: var(--interface-color-border);
 
 .workspace-leaf.mod-active .view-header {
 background-color: var(--background-secondary);
-border-bottom: 2px solid var(--interactive-accent);
+border-bottom: 2px solid var(--active-title-border);
 }
 
 
@@ -1721,4 +1777,9 @@ color: var(--text-accent);
   cursor: pointer;
   position: relative;
   white-space: nowrap;
+}
+
+
+.markdown-preview-view {
+  background-color: var(--background-primary-alt)!important;
 }
