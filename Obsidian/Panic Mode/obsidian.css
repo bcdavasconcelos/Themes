@@ -14,10 +14,10 @@
 --font-small: 18px;
 --font-medium: 21px;
 --line-height-preview: 1.7em;
---line-height-header-preview: 2em;
---font-family-mdpreview: Gentium, Alegreya, Source Sans Pro;
+--line-height-header-preview: 1em;
+--font-family-mdpreview: Gentium Plus, Alegreya, Source Sans Pro;
 --font-family-editor: Menlo;
---font-family-preview: Gentium, Alegreya, Source Sans Pro;
+--font-family-preview: Gentium Plus, Alegreya, Source Sans Pro;
 --font-family-code: Cousine;
 } 
 
@@ -282,44 +282,6 @@ line-height: var(--line-height-footnote);
 
 }
  */
-
-
-/***************************************/
-/* internal embedded link in preview a.k.a. transclusion */
-/***************************************/
-
-/* Naked Embeds */
-.markdown-embed-title { display: none; } /* Remove file name */
-/* .markdown-preview-view .markdown-embed-content>:first-child { display:none;} */ /* Remove header */
-/* .markdown-preview-view .markdown-embed-content>:last-child { display:none;} */ /* Remove last line */
-
-.markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0;}
-.markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 50;}
-
-/*remove the following two line, you will get border and scroll*/
-/* 
-.markdown-preview-view .markdown-embed { border:none; padding:0; margin:0; }
- */
-.markdown-preview-view .markdown-embed-content { 
-max-height: unset;
-background-color: var(--background-primary); /*define different bg color*/
-/* 
-border-top: 2px solid var(--text-faint);
-border-bottom: 2px solid var(--text-faint);
- */
-}
-
-/* the link on the top right corner*/
-.markdown-embed-link {
-color: var(--text-faint) !important;
-}
-.markdown-embed-link:hover {
-color: var(--text-accent) !important;
-}
-
-/* tag in transcluded content */
-/* .markdown-preview-view .markdown-embed-content a.tag{
-} */
 
 
 /***************************************/
@@ -882,6 +844,35 @@ border-bottom-left-radius: 4px;
 /***************************************/
 /* Checkbox */
 /***************************************/
+/* Round checkbxes in preview and editor */
+input[type=checkbox], .markdown-preview-view .cm-formatting-task {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid var(--text-faint);
+    padding: 0;
+/*     vertical-align: middle;     */
+}
+
+.markdown-preview-view .cm-s-obsidian span.cm-formatting-task {
+    color: transparent;
+    width: 1em !important;
+    height: 1em;
+    display: inline-block;
+}
+
+input[type=checkbox]:focus{
+  outline:0;
+}
+input[type=checkbox]:checked, .cm-formatting-task.cm-property {
+    background-color: var(--text-accent-hover);
+    border: 1px solid var(--text-accent-hover);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+/* 
 
 
 .markdown-preview-view .task-list-item-checkbox:checked::before {
@@ -965,6 +956,7 @@ background-color: var(--checkbox-color);
 .checkbox-container:active:after {
   width: 20px;
   }
+ */
   
 
 
@@ -1682,6 +1674,7 @@ line-height: 28px;
 
 /* hashtags before headers */
 
+
 h1:before {
 content: "H1 ";
 font-size: var(--header-before-size-h1);
@@ -1689,29 +1682,35 @@ color: var(--header-before-color);
 }
 h2:before {
 content: "H2 ";
+padding-left: 3px;
 font-size: var(--header-before-size-h2);
 color: var(--header-before-color);
 }
 h3:before {
 content: "H3 ";
+padding-left: 8px;
 font-size: var(--header-before-size-h3);
 color: var(--header-before-color);
 }
 h4:before {
 content: "H4 ";
+padding-left: 13px;
 font-size: var(--header-before-size-h4);
 color: var(--header-before-color);
 }
 h5:before {
 content: "H5 ";
+padding-left: 14px;
 font-size: var(--header-before-size-h5);
 color: var(--header-before-color);
 }
 h6:before {
 content: "H6 ";
+padding-left: 16px;
 font-size: var(--header-before-size-h6);
 color: var(--header-before-color);
 }
+
 
 
 /* Make subtler folding gutter arrows */
@@ -1781,5 +1780,95 @@ color: var(--text-accent);
 
 
 .markdown-preview-view {
-  background-color: var(--background-primary-alt)!important;
+  background-color: var(--background-primary)!important;
 }
+
+
+
+/***************************************/
+/* internal embedded link in preview a.k.a. transclusion */
+/***************************************/
+
+/* 
+.internal-embed, 
+.internal-embed > .markdown-embed,
+.internal-embed > .markdown-embed > .markdown-embed-content,
+.markdown-embed-content > * {
+	display: inline;
+	padding:10px;
+}
+ */
+/* 
+.markdown-embed-link {
+	position: static;
+	display: inline;
+}
+ */
+
+
+/* Naked Embeds */
+.markdown-embed-title { display: none; } /* Remove file name */
+
+.markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0;}
+.markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0;}
+
+/*remove the following two line, you will get border and scroll*/
+/* 
+.markdown-preview-view .markdown-embed { border:none; padding:0; margin:0; }
+ */
+.markdown-preview-view .markdown-embed-content { 
+max-height: unset;
+background-color: var(--background-primary); /*define different bg color*/
+padding-right: 0px;
+}
+/* 
+border-top: 2px solid var(--text-faint);
+border-bottom: 2px solid var(--text-faint);
+ */
+
+/* the link on the top right corner*/
+.markdown-embed-link, .file-embed-link {
+color: var(--text-faint) !important;
+padding-left: 0px;
+padding-right: 0px;
+top: 10px;
+right: 0px;
+}
+
+.markdown-embed-link:hover {
+color: var(--text-accent) !important;
+}
+
+
+.markdown-preview-view .markdown-embed,
+.markdown-preview-view .file-embed {
+  background-color: var(--background-primary);
+  border-radius: 6px;
+  border: 0px solid var(--background-modifier-border);
+  padding: 0px;  margin: 0px;  
+}
+/* 
+  border-bottom: 0px dashed;
+  border-bottom-color: var(--header-before-color);
+ */
+
+
+/* Ignora o primeiro header e os dois primeiros parágrafos */
+/* .markdown-preview-view .markdown-embed-content>:first-child + p + p { display:none;}  */
+/* .markdown-preview-view .markdown-embed-content>:first-child + p { display:none;}  */
+.markdown-preview-view .markdown-embed-content> h1:first-child { display:none;} 
+
+
+/* Remove a hr e o parágrafo abaixo */
+.markdown-embed-content > hr + p { display: none; }
+.markdown-embed-content > hr { display: none; }
+
+
+/* Remove embed yaml first separator */
+/* .markdown-embed-content > hr:first-child { display: none; } */
+/* Remove embed yaml content */
+/* .markdown-embed-content > hr:first-child + p { display: none; } */
+/* Remove embed yaml second separator (if empty) */
+/* .markdown-embed-content > hr:first-child + hr { display: none; } */
+/* Remove embed yaml second separator */
+/* .markdown-embed-content > hr:first-child + p + hr { display: none; } */
