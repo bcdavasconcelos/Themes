@@ -127,8 +127,10 @@
 --vim-cursor:	#474949;
 --header-before-color:	#575757;
 --blockquote-bg:	var(--background-primary);
+--checkbox-color: var(--tag-bg);
+--checkbox-enabled: var(--file-name-color);
+--active-title-border: var(--interactive-accent);
 }
-
 
 /*-------------------------------------*/
 /* Search the following lines */
@@ -192,7 +194,6 @@ color: var(--link-text-hover)!important;
 /* the url string in editor */
 .cm-s-obsidian span.cm-string{
 color: var(--text-muted)!important;
-background-color: var(--background-primary)!important;
 }
 
 
@@ -847,7 +848,18 @@ border-bottom-left-radius: 4px;
 /***************************************/
 /* Checkbox */
 /***************************************/
+
+.checkbox-container {
+background-color: var(--checkbox-color);
+}
+
+.checkbox-container.is-enabled {
+  background-color: var(--checkbox-enabled);
+}
+
+
 /* Round checkbxes in preview and editor */
+
 input[type=checkbox], .markdown-preview-view .cm-formatting-task {
     -webkit-appearance: none;
     appearance: none;

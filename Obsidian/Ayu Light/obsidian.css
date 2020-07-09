@@ -192,7 +192,6 @@ color: var(--link-text-hover)!important;
 /* the url string in editor */
 .cm-s-obsidian span.cm-string{
 color: var(--text-muted)!important;
-background-color: var(--background-primary)!important;
 }
 
 

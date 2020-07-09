@@ -128,8 +128,10 @@
 --header-before-color:	#4c535a;
 --blockquote-bg:	var(--background-primary);
 --bracket-color:	var(--header-before-color);
+--checkbox-color: var(--text-highlight-bg);
+--checkbox-enabled: var(--border-color);
+--active-title-border: var(--interactive-accent);
 }
-
 
 /*-------------------------------------*/
 /* Search the following lines */
@@ -193,7 +195,6 @@ color: var(--link-text-hover)!important;
 /* the url string in editor */
 .cm-s-obsidian span.cm-string{
 color: var(--text-muted)!important;
-background-color: var(--background-primary)!important;
 }
 
 
@@ -848,6 +849,16 @@ border-bottom-left-radius: 4px;
 /***************************************/
 /* Checkbox */
 /***************************************/
+
+.checkbox-container {
+background-color: var(--checkbox-color);
+}
+
+.checkbox-container.is-enabled {
+  background-color: var(--checkbox-enabled);
+}
+
+
 /* Round checkbxes in preview and editor */
 input[type=checkbox], .markdown-preview-view .cm-formatting-task {
     -webkit-appearance: none;
