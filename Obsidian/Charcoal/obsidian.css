@@ -172,7 +172,6 @@ a,
 .internal-link,
 .cm-hmd-internal-link,
 .cm-link,
-.cm-formatting-link,
 .cm-url {
 text-decoration: none !important;
 background-color: var(--link-bg)!important;
@@ -183,11 +182,12 @@ a:hover,
 .internal-link:hover,
 .cm-hmd-internal-link:hover,
 .cm-link:hover,
-.cm-formatting-link:hover,
 .cm-url:hover {
 background-color: var(--link-bg-hover)!important;
 color: var(--link-text-hover)!important;
 }
+
+
 
 
 
@@ -743,12 +743,11 @@ bottom: 0px !important;
 
  /* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
-font-family: monaco !important;
+font-family: var(--font-family-code) !important;
 font-size: var(--font-size-code) !important;
 padding: 1px !important;
 display: block;
 color: var(--code-block) !important;
-background-color: var(--pre-code-bg)!important;
 font-weight: 500;
 }
 

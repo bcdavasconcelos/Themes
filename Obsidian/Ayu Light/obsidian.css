@@ -46,7 +46,8 @@
 --text-faint:	#b1b4b9;
 --text-error:	#800000;
 --text-error-hover:	#990000;
---text-highlight-bg:	var(--text-selection);
+--text-highlight-bg:	rgba(227, 238, 242, 0.50);
+--text-search-highlight-bg:	rgba(150, 150, 242, 0.8);
 --text-selection:	rgba(227, 238, 242, 0.50);
 --text-on-accent:	var(--text-normal);
 --interactive-normal:	var(--background-primary);
@@ -127,8 +128,11 @@
 --vim-cursor:	#474949;
 --header-before-color:	#b1b4b8;
 --blockquote-bg:	var(--background-primary);
+--bracket-color:	var(--header-before-color);
+--checkbox-color:	var(--tag-bg);
+--checkbox-enabled:	var(--file-name-color);
+--active-title-border:	var(--interactive-accent);
 }
-
 
 /*-------------------------------------*/
 /* Search the following lines */
@@ -170,7 +174,6 @@ a,
 .internal-link,
 .cm-hmd-internal-link,
 .cm-link,
-.cm-formatting-link,
 .cm-url {
 text-decoration: none !important;
 background-color: var(--link-bg)!important;
@@ -181,11 +184,12 @@ a:hover,
 .internal-link:hover,
 .cm-hmd-internal-link:hover,
 .cm-link:hover,
-.cm-formatting-link:hover,
 .cm-url:hover {
 background-color: var(--link-bg-hover)!important;
 color: var(--link-text-hover)!important;
 }
+
+
 
 
 
@@ -741,12 +745,11 @@ bottom: 0px !important;
 
  /* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
-font-family: monaco !important;
+font-family: var(--font-family-code) !important;
 font-size: var(--font-size-code) !important;
 padding: 1px !important;
 display: block;
 color: var(--code-block) !important;
-background-color: var(--pre-code-bg)!important;
 font-weight: 500;
 }
 
@@ -1875,3 +1878,8 @@ color: var(--text-accent) !important;
 /* .markdown-embed-content > hr:first-child + hr { display: none; } */
 /* Remove embed yaml second separator */
 /* .markdown-embed-content > hr:first-child + p + hr { display: none; } */
+
+span.obsidian-search-match-highlight{
+color: var(--text-normal) !important;
+background-color: var(--text-search-highlight-bg)!important;
+}

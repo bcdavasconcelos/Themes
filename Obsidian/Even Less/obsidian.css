@@ -716,7 +716,7 @@ code{
 
  /* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
-  font-family: monaco !important;
+  font-family: var(--font-family-code) !important;
   font-size: var(--font-size-code) !important;
   padding: 1px !important;
   display: block;

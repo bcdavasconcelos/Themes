@@ -47,6 +47,7 @@
 --text-error:	#800000;
 --text-error-hover:	#990000;
 --text-highlight-bg:	var(--text-selection);
+--text-search-highlight-bg: rgba(280, 137, 135, 0.9);
 --text-selection:	rgba(232, 167, 165, 0.50);
 --text-on-accent:	var(--text-normal);
 --interactive-normal:	var(--background-primary);
@@ -171,7 +172,6 @@ a,
 .internal-link,
 .cm-hmd-internal-link,
 .cm-link,
-.cm-formatting-link,
 .cm-url {
 text-decoration: none !important;
 background-color: var(--link-bg)!important;
@@ -182,11 +182,12 @@ a:hover,
 .internal-link:hover,
 .cm-hmd-internal-link:hover,
 .cm-link:hover,
-.cm-formatting-link:hover,
 .cm-url:hover {
 background-color: var(--link-bg-hover)!important;
 color: var(--link-text-hover)!important;
 }
+
+
 
 
 
@@ -742,12 +743,11 @@ bottom: 0px !important;
 
  /* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
-font-family: monaco !important;
+font-family: var(--font-family-code) !important;
 font-size: var(--font-size-code) !important;
 padding: 1px !important;
 display: block;
 color: var(--code-block) !important;
-background-color: var(--pre-code-bg)!important;
 font-weight: 500;
 }
 
@@ -1876,3 +1876,7 @@ color: var(--text-accent) !important;
 /* .markdown-embed-content > hr:first-child + hr { display: none; } */
 /* Remove embed yaml second separator */
 /* .markdown-embed-content > hr:first-child + p + hr { display: none; } */
+
+span.obsidian-search-match-highlight{
+background-color: var(--text-search-highlight-bg)!important;
+}
