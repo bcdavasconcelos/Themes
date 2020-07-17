@@ -16,7 +16,7 @@
 --line-height-preview: 1.7em;
 --line-height-header-preview: 1em;
 --font-family-mdpreview: Gentium Plus, Alegreya, Source Sans Pro;
---font-family-editor: Menlo;
+--font-family-editor: Skolar PE, iA Writer Quattro S, Menlo;
 --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro;
 --font-family-code: Cousine;
 } 
@@ -795,7 +795,6 @@ color: var(--bracket-color)!important;
 /* for editor */
 
 .cm-quote {
-background-color: var(--blockquote-bg)!important;
 color: var(--text-normal) !important;
 font-size: var(--font-size-blockquote);
 }
@@ -1886,3 +1885,17 @@ color: var(--text-accent) !important;
 /* .markdown-embed-content > hr:first-child + hr { display: none; } */
 /* Remove embed yaml second separator */
 /* .markdown-embed-content > hr:first-child + p + hr { display: none; } */
+
+.search-result-collapse-indicator {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting) {
+    font-size: 0;
+}
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting)::after {
+    content: '🔗';
+    font-size: 1rem;
+}

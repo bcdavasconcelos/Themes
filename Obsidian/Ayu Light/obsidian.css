@@ -16,7 +16,7 @@
 --line-height-preview: 1.7em;
 --line-height-header-preview: 1em;
 --font-family-mdpreview: Gentium Plus, Alegreya, Source Sans Pro;
---font-family-editor: Menlo;
+--font-family-editor: Skolar PE, iA Writer Quattro S, Menlo;
 --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro;
 --font-family-code: Cousine;
 } 
@@ -737,7 +737,7 @@ cursor: help;
 .cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code)
 {
-background-color: var(--pre-code-bg) !important;
+background-color: var(--background-primary)!important;
 color: var(--inline-code) !important;
 bottom: 0px !important;
 }
@@ -780,12 +780,14 @@ background-color: var(--text-selection) !important;
 /* Brackets */
 /***************************************/
 
-.cm-s-obsidian span.cm-formatting-em,
-.cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-formatting-link {
 color: var(--bracket-color)!important;
 }
 
+.cm-s-obsidian span.cm-formatting-em,
+.cm-s-obsidian span.cm-formatting-strong{
+color: rgba(210,210,210,1)!important;
+}
 
 /***************************************/
 /* Blockquote */
@@ -795,7 +797,6 @@ color: var(--bracket-color)!important;
 /* for editor */
 
 .cm-quote {
-background-color: var(--blockquote-bg)!important;
 color: var(--text-normal) !important;
 font-size: var(--font-size-blockquote);
 }
@@ -1882,4 +1883,19 @@ color: var(--text-accent) !important;
 span.obsidian-search-match-highlight{
 color: var(--text-normal) !important;
 background-color: var(--text-search-highlight-bg)!important;
+}
+
+.search-result-collapse-indicator {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting) {
+    font-size: 0;
+}
+
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting)::after {
+    content: '🔗';
+    font-size: 1rem;
 }
