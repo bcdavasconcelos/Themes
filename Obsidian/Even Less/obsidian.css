@@ -1676,3 +1676,7 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-for
     content: '🔗';
     font-size: 1rem;
 }
+
+.nav-file-icon {
+    left: -1rem;
+}
