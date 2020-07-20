@@ -1,3 +1,0 @@
-# Even Less
-
-![](evenless.png)

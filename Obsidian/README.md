@@ -1,6 +1,5 @@
 # Obsidian Themes
 
-
 ## Obsidian Ayu Light  
 
 ![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Ayu%20Light/ayu2.png?raw=true)
@@ -21,10 +20,8 @@
 
 ![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/Panic%20Mode/panic.png?raw=true)
 
-
 ## GDCT
 ![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/GDCT/gdct.png?raw=true)
-
 
 ## GDCT Light
 ![](https://github.com/bcdavasconcelos/Themes/blob/master/Obsidian/GDCT%20Light/gdct.png?raw=true)

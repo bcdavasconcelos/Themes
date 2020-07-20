@@ -1,5 +1,5 @@
-/* Panic Mode */
-/* bcdav 2020-07-06-22-58-42 */
+/* Graphite Dark */
+/* bcdav 2020-07-05-17-05-23 */
 
 /* global */
 
@@ -18,20 +18,20 @@
 --font-family-mdpreview: Gentium Plus, Alegreya, Source Sans Pro;
 --font-family-editor: Skolar PE, iA Writer Quattro S, Menlo;
 --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro;
---font-family-code: Cousine;
+--font-family-code: Ubuntu Mono derivative Powerline, Menlo;
 } 
 
 .theme-light,
 .theme-dark 
 {
---background-primary:	rgba(21, 30, 45,1);
---background-primary-alt:	rgba(14, 20, 30,1);
---background-secondary: rgba(16, 22, 30,1);
+--background-primary:	#161719;
+--background-primary-alt:	rgba(0,0,0,0.08);
+--background-secondary:	#202123;
 --background-secondary-alt:	var(--background-secondary); 
 --background-accent:	rgba(0,0,0,0.08);
 --background-modifier-border:	var(--text-faint);
 --background-modifier-form-field:	var(--background-primary);
---background-modifier-form-field-highlighted:	var(--tag-bg);
+--background-modifier-form-field-highlighted:	var(--background-primary);
 --background-modifier-box-shadow:	rgba(0, 0, 0, 0.3);
 --background-modifier-success:	rgba(160,232,92,0.08);
 --background-modifier-error:	#3d0000;
@@ -39,15 +39,15 @@
 --background-modifier-error-hover:	#470000;
 --background-modifier-cover:	rgba(0, 0, 0, 0.6);
 	
---text-accent:	#46b4d3;
+--text-accent:	#3c95fa;
 --text-accent-hover:	var(--text-faint);
---text-normal:	rgba(224, 226, 213,0.95); 
---text-muted:	#a1a1a1;
---text-faint:	#a1a1a1;
+--text-normal:	#d5d5d5;
+--text-muted:	#949594;
+--text-faint:	#949594;
 --text-error:	#800000;
 --text-error-hover:	#990000;
 --text-highlight-bg:	var(--text-selection);
---text-selection:	rgba(80, 102, 130, 0.50);
+--text-selection:	rgba(42, 48, 56, 0.50);
 --text-on-accent:	var(--text-normal);
 --interactive-normal:	var(--background-primary);
 --interactive-hover:	rgba(0,0,0,0.05);
@@ -60,14 +60,14 @@
 	
 	
 --graph-note-name:	var(--text-normal);
---graph-node-color:	var(--header-before-color);
---graph-line-color:	#282c3c;
---graph-line-on-hover:	var(--header-before-color);
---hashtag-color:	var(--text-normal);
---border-color:	#090b0d;
+--graph-node-color:	var(--tag-bg);
+--graph-line-color:	var(--header-before-color);
+--graph-line-on-hover:	var(--tag-bg);
+--hashtag-color:	#3b3e43;
+--border-color:	#000000;
 	
 --blockquote-border:	var(--text-accent);
---pre-code-bg:	#121826;
+--pre-code-bg:	#1b1b1a;
 --code-block:	var(--text-muted); 
 --file-name-color:	var(--text-accent);
 --inline-code:	var(--text-muted);
@@ -80,7 +80,7 @@
 --quick-switcher:	var(--text-selection); 
 	
 	
---text-title-h1:	#f6a82a;
+--text-title-h1:	#c0d2de;
 --text-title-h2:	var(--text-title-h1);
 --text-title-h3:	var(--text-title-h1);
 --text-title-h4:	var(--text-title-h1);
@@ -93,11 +93,11 @@
 --link-text-hover:	var(--text-accent);
 --link-bg-hover:	;
 	
---hashtag-color:	var(--text-normal);
---tag-text-color:	var(--text-normal);
---tag-bg:	#5c34ae;
---tag-text-hover:	var(--text-normal);
---tag-bg-hover:	#5c34ae;
+--hashtag-color:	#3b3e43;
+--tag-text-color:	var(--background-primary);
+--tag-bg:	#666a6c;
+--tag-text-hover:	var(--background-primary);
+--tag-bg-hover:	#666a6c;
 	
 --interface-color-cross:	#fc3b44;
 --interface-color-pencil:	#fec03e;
@@ -125,12 +125,12 @@
 --line-height-footnote:	1.2em;
 --ul-line-specs:	0.9px solid;
 --vim-cursor:	#474949;
---header-before-color:	#a77e32;
+--header-before-color:	#4c535a;
 --blockquote-bg:	var(--background-primary);
 --bracket-color:	var(--header-before-color);
---checkbox-color: var(--background-primary);
---checkbox-enabled: var(--tag-bg);
---active-title-border: var(--interactive-accent);
+--checkbox-color:	var(--tag-bg);
+--checkbox-enabled:	var(--file-name-color);
+--active-title-border:	var(--interactive-accent);
 }
 
 
@@ -801,15 +801,40 @@ font-size: var(--font-size-blockquote);
 
 /* for preview */
 .markdown-preview-view blockquote {
-background-color: var(--blockquote-bg)!important;
-border: 0px solid;
-border-color: var(--blockquote-border)!important;
-border-left-width: 4px !important;
-border-radius: 0 8px 8px 0;
-line-height: 1em;
-margin: 0 10% 0 10%;
-/* font-style: italic; */
-font-size: var(--font-size-blockquote);
+	font-size: var(--font-size-blockquote);
+	background-color: var(--background-secondary)!important;
+	border-left: 5px solid var(--bracket-color)!important;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-right: 0px;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	position: relative;
+	max-width: 80%;
+	left:5%;
+	font-style: normal;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+.markdown-preview-view blockquote:before {
+	color: var(--text-title-h1);
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+/* 	margin-right: 0.25em; */
+	vertical-align: -0.4em;
+}
+
+.markdown-preview-view blockquote p {
+/* 	color: #23384d; */
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	display: inline;
+		font-style: normal;
+}
+
+.markdown-preview-view blockquote::before {
+	content: "\201C"
 }
 
 
@@ -855,6 +880,7 @@ background-color: var(--checkbox-color);
 .checkbox-container.is-enabled {
   background-color: var(--checkbox-enabled);
 }
+
 
 /* Round checkbxes in preview and editor */
 input[type=checkbox], .markdown-preview-view .cm-formatting-task {
@@ -1026,7 +1052,7 @@ font-size: var(--font-size-side-dock);
 /*decrease the spacing between result items*/
 .search-result-file-title,
 .search-result-file-match {
-padding: 0px 10px;
+padding: 0px 5px;
 font-size: var(--font-small);
 }
 
@@ -1578,16 +1604,23 @@ font-family: var(--font-family);
 font-size: var(--font-size-side);
 }
 .search-result {
+/* 
 background-color: var(--interface-color-background-alt);
+ */
 border-radius: 0px;
 border-bottom: 0.1em solid var(--border-color);
-padding: 5px;
-margin: 10px 0px 10px 0px;
+padding: 10px;
+margin: 0px 0px 0px 0px;
 }
+
+/* 
+.search-result:hover,
 .search-result-file-match:hover,
 .search-result-file-title:hover {
-background-color: var(--interface-color-border);
+background-color: var(--tag-bg);
 }
+ */
+ 
 .search-result-container {
 line-height: var(--font-line-height-side);
 padding: 0px;
@@ -1598,7 +1631,7 @@ padding: 0px 3px 0px 11px;
 .search-result-file-title {
 padding: 0px 10px;
 font-weight: bold;
-font-family: var(--font-family-code);
+font-family: var(--font-family-editor);
 }
 .search-result-file-matches {
 padding: 0px;
@@ -1617,7 +1650,6 @@ padding: 0px;
 .workspace-split.mod-right-split .view-content {
 padding: 10px 10px !important;
 }
-
 
 /***************************************/
 /* _pane_header */

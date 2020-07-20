@@ -18,7 +18,7 @@
 --font-family-mdpreview: Gentium Plus, Alegreya, Source Sans Pro;
 --font-family-editor: Skolar PE, iA Writer Quattro S, Menlo;
 --font-family-preview: Gentium Plus, Alegreya, Source Sans Pro;
---font-family-code: Cousine;
+--font-family-code: Ubuntu Mono derivative Powerline, Menlo;
 } 
 
 .theme-light,
@@ -802,15 +802,40 @@ font-size: var(--font-size-blockquote);
 
 /* for preview */
 .markdown-preview-view blockquote {
-background-color: var(--blockquote-bg)!important;
-border: 0px solid;
-border-color: var(--blockquote-border)!important;
-border-left-width: 4px !important;
-border-radius: 0 8px 8px 0;
-line-height: 1em;
-margin: 0 10% 0 10%;
-/* font-style: italic; */
-font-size: var(--font-size-blockquote);
+	font-size: var(--font-size-blockquote);
+	background-color: var(--background-secondary)!important;
+	border-left: 5px solid var(--bracket-color)!important;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-right: 0px;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	position: relative;
+	max-width: 80%;
+	left:5%;
+	font-style: normal;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+.markdown-preview-view blockquote:before {
+	color: var(--text-title-h1);
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+/* 	margin-right: 0.25em; */
+	vertical-align: -0.4em;
+}
+
+.markdown-preview-view blockquote p {
+/* 	color: #23384d; */
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	display: inline;
+		font-style: normal;
+}
+
+.markdown-preview-view blockquote::before {
+	content: "\201C"
 }
 
 
@@ -1028,7 +1053,7 @@ font-size: var(--font-size-side-dock);
 /*decrease the spacing between result items*/
 .search-result-file-title,
 .search-result-file-match {
-padding: 0px 10px;
+padding: 0px 5px;
 font-size: var(--font-small);
 }
 
@@ -1580,16 +1605,23 @@ font-family: var(--font-family);
 font-size: var(--font-size-side);
 }
 .search-result {
+/* 
 background-color: var(--interface-color-background-alt);
+ */
 border-radius: 0px;
 border-bottom: 0.1em solid var(--border-color);
-padding: 5px;
-margin: 10px 0px 10px 0px;
+padding: 10px;
+margin: 0px 0px 0px 0px;
 }
+
+/* 
+.search-result:hover,
 .search-result-file-match:hover,
 .search-result-file-title:hover {
-background-color: var(--interface-color-border);
+background-color: var(--tag-bg);
 }
+ */
+ 
 .search-result-container {
 line-height: var(--font-line-height-side);
 padding: 0px;
@@ -1600,7 +1632,7 @@ padding: 0px 3px 0px 11px;
 .search-result-file-title {
 padding: 0px 10px;
 font-weight: bold;
-font-family: var(--font-family-code);
+font-family: var(--font-family-editor);
 }
 .search-result-file-matches {
 padding: 0px;
@@ -1619,7 +1651,6 @@ padding: 0px;
 .workspace-split.mod-right-split .view-content {
 padding: 10px 10px !important;
 }
-
 
 /***************************************/
 /* _pane_header */
