@@ -1599,7 +1599,7 @@ font-size: var(--font-size-side);
 .search-result {
 background-color: var(--interface-color-background-alt);
 border-radius: 0px;
-border-bottom: 0.1em solid var(--border-color);
+border-bottom: 0em solid var(--border-color);
 padding: 5px;
 margin: 10px 0px 10px 0px;
 }
