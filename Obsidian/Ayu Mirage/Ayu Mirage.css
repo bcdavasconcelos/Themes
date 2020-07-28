@@ -131,6 +131,7 @@
 --checkbox-color:	var(--tag-bg);
 --checkbox-enabled:	var(--file-name-color);
 --active-title-border:	var(--interactive-accent);
+--hr-color: hsl(0, 0%, 39%);
 }
 
 
@@ -202,8 +203,9 @@ color: var(--text-muted)!important;
 
 /* make external links italics to differentiate */
 a:not(.internal-link) {
-font-style: italic;
+/* font-style: italic; */
 }
+
 
 /*************************************/
 /* tags */
@@ -399,7 +401,7 @@ padding-right: 1% !important;
 .markdown-preview-view, .mod-single-child .markdown-preview-view {
 font-family: var(--font-family-mdpreview);
 font-size: var(--font-size-normal);
-text-align: justify;
+/* text-align: justify; */
 /* text-justify: inter-word; */
 text-align-last: left;
 hyphens:auto;
@@ -1866,25 +1868,41 @@ color: var(--text-accent);
 max-height: unset;
 background-color: var(--background-primary); /*define different bg color*/
 padding-right: 0px;
+/* border-top: 1px dashed var(--text-faint); */
+border-bottom: 2px dashed var(--text-faint);
 }
-/* 
-border-top: 2px solid var(--text-faint);
-border-bottom: 2px solid var(--text-faint);
- */
 
 /* the link on the top right corner*/
+.markdown-embed-link::before,
+.markdown-embed-link::after {
+	content: ' ';
+	padding: 7px; 
+}
+.markdown-embed-link::before {
+	content: ' Edit original ';
+	padding-right: 0px;
+	font-family: var(--font-family-code);
+	font-size: var(--font-small);
+	vertical-align: 3px;
+}
+
 .markdown-embed-link, .file-embed-link {
-color: var(--text-faint) !important;
-padding-left: 0px;
-padding-right: 0px;
-top: 10px;
-right: 0px;
+	color: var(--text-normal) !important;
+	font-size: var(--font-small)!important;
+	top: -20px;
+	right: 10px;
+	background-color: var(--background-accent)!important;
+	padding: 2px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
 .markdown-embed-link:hover {
-color: var(--text-accent) !important;
+color: var(--text-accent)!important;
+/* background: var(--tag-bg)!important; */
 }
-
 
 .markdown-preview-view .markdown-embed,
 .markdown-preview-view .file-embed {
@@ -1898,16 +1916,10 @@ color: var(--text-accent) !important;
   border-bottom-color: var(--header-before-color);
  */
 
-
 /* Ignora o primeiro header e os dois primeiros parágrafos */
 /* .markdown-preview-view .markdown-embed-content>:first-child + p + p { display:none;}  */
 /* .markdown-preview-view .markdown-embed-content>:first-child + p { display:none;}  */
 .markdown-preview-view .markdown-embed-content> h1:first-child { display:none;} 
-
-
-/* Remove a hr e o parágrafo abaixo */
-.markdown-embed-content > hr + p { display: none; }
-.markdown-embed-content > hr { display: none; }
 
 
 /* Remove embed yaml first separator */
@@ -1919,20 +1931,82 @@ color: var(--text-accent) !important;
 /* Remove embed yaml second separator */
 /* .markdown-embed-content > hr:first-child + p + hr { display: none; } */
 
+span.obsidian-search-match-highlight{
+color: var(--text-normal) !important;
+background-color: var(--text-search-highlight-bg)!important;
+}
 
 .search-result-collapse-indicator {
     position: absolute;
     left: -10px;
     top: -10px;
 }
-
 div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting) {
     font-size: 0;
 }
+
+
 div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url:not(.cm-formatting)::after {
     content: '🔗';
     font-size: 1rem;
 }
 .nav-file-icon {
     left: -1rem;
+}
+
+
+/* 
+.footnotes {
+  border-top: 1px solid hsl(0, 0%, 39%);
+}
+ */
+
+hr.footnotes-sep {
+	width: 50%!important;
+	border: 0.2px solid var(--hr-color)!important;
+	background-color: var(--background-primary)!important;
+}
+
+ol.footnotes-list {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 85%;
+}
+
+
+.footnotes ol li p{
+	margin-top: 1em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	margin-bottom: 1.0em;
+}
+
+
+.markdown-preview-view hr {
+	height: 0px !important;
+	border: 0.1px solid var(--hr-color);
+	border-radius: 5px;
+	width: 50%;
+	margin: 2em auto;
+}
+
+/* Remove a hr e o parágrafo abaixo */
+.markdown-embed-content > hr + p { display: none; }
+.markdown-embed-content > hr { display: none; }
+.markdown-embed-content > hr.footnotes-sep { display: block;!important; }
+
+sub,
+sup {
+	font-size: 0.7em;
+/* 	color: #666; */
+	position: middle;
+	line-height: 0;
+	vertical-align: super;
+}
+
+sup > a {
+	font-family: var(--font-family-code)!important;
+	}
+
+.footnote-link::before {
 }
