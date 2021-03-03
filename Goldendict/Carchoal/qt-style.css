@@ -1,0 +1,24 @@
+MainWindow #searchPane #translateLine, MainWindow #searchPane #wordList
+{
+    font-size: 22px; font-family: "Alegreya"; 
+    padding-left: 2px;
+  background: #1c1e21;
+  color: #959595;
+}
+MainWindow #translateLine, ScanPopup #translateLine, MainWindow #wordList, MainWindow #historyPane #historyList
+{
+    font-size: 22px; font-family: "Alegreya"; 
+    padding-left: 2px;
+     background: #1c1e21;
+    color: #959595;
+}
+
+MainWindow #dictsPane #dictsList
+{
+    font-size: 16px; font-family: "Alegreya"; 
+    padding-left: 2px;
+     background: #1c1e21;
+    color: #959595;
+}
+
+

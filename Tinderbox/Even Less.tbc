@@ -1,0 +1,95 @@
+<colors version="1" >
+<description>Even Less</description>
+
+
+<color name="Glf Muted" color="#a5a5ae"/>
+<color name="Glf Muted2" color="#e4e1e7"/>
+<color name="Glf Hash" color="#585b6d"/>
+<color name="Glf Border" color="#cdcdcf"/>
+<color name="Glf Font" color="#35404d"/>
+<color name="Glf BG" color="#ededee"/>
+<color name="Glf Header" color="#2f3e5a"/>
+<color name="Glf Muted" color="#a5a5ae"/>
+<color name="Glf Muted2" color="#e4e1e7"/>
+<color name="Glf Tag BG" color="#8c96b4"/>
+<color name="Glf Hash" color="#585b6d"/>
+<color name="Glf Accent" color="#8f5269"/>
+<color name="Glf BG2" color="#2c2d32"/>
+<color name="EvT Aluminium" color="#777777"/>
+<color name="EvT Dark Coral" color="#c23d37"/>
+<color name="EvT Bianca" color="#f3ecd8"/>
+<color name="EvT Beauty Bush" color="#edb7b4"/>
+<color name="EvT Provincial Pink" color="#fcf2f3"/>
+<color name="EvT Twilight Blue" color="#f7f3e6"/>
+<color name="EvT Spring Wood" color="#faf7ee"/>
+<color name="EvT Arapawa" color="#23384d"/>
+<color name="EvT Even Theme" color="#415669"/>
+<color name="EvT Even Theme 2" color="#556a7d"/>
+<color name="EvT Romance" color="#fefefe"/>
+<color name="GDCT background" color="#fefefe"/>
+<color name="GDCT text-color" color="#23384d"/>
+<color name="GDCT link-color" color="#cf574a"/>
+<color name="GDCT border" color="#edb7b4"/>
+<color name="GDCT tag-color" color="#828282"/>
+<color name="GDCT-Dk background" color="#403f3f"/>
+<color name="GDCT-Dk text-color" color="#fffdfa"/>
+<color name="GDCT-Dk link-color" color="#49bbe2"/>
+<color name="GDCT-Dk border" color="#fb6961"/>
+<color name="GDCT-Dk tag-color" color="#828282"/>
+<color name="BrAyuM Fundo" color="#171a23"/>
+<color name="BrAyuM Fundo BBEdit" color="#1e1f29"/>
+<color name="BrAyuM Fonte" color="#d1d0c7"/>
+<color name="BrAyuM Header" color="#8e9aaa"/>
+<color name="BrAyuM Tag Background" color="#2b3148"/>
+<color name="BrAyuM Link" color="#fdc252"/>
+<color name="BrAyuM Mirage" color="#f4f5e9"/>
+<color name="BrAyuM Mirage 2" color="#1e212d"/>
+<color name="DT3 Sunset Orange" color="#fc3b44"/>
+<color name="DT3 Purple Mountain's Majesty" color="#876eaf"/>
+<color name="DT3 Bermuda" color="#6ae7be"/>
+<color name="DT3 Smalt Blue" color="#436576"/>
+<color name="DT3 Salmon" color="#fb6961"/>
+<color name="DT3 Inch Worm" color="#a0e85b"/>
+<color name="DT3 Golden Tainoi" color="#fec03e"/>
+<color name="DT3 Links in dark mode" color="#6c69b2"/>
+<color name="DT3 Amarelo-Laranja" color="#fb9643"/>
+<color name="DT3 Dark" color="#212122"/>
+
+
+<color name="0"        color="HSV(200, 2, 48)"/>
+<color name="1"        color="HSV(200, 2, 63)"/>
+<color name="2"        color="HSV(200, 2, 72)"/>
+<color name="3"        color="HSV(200, 2, 78)"/>
+<color name="4"        color="HSV(200, 2, 83)"/>
+<color name="5"        color="HSV(200, 2, 87)"/>
+<color name="6"        color="HSV(200, 2, 90)"/>
+<color name="7"        color="HSV(200, 2, 93)"/>
+<color name="8"        color="HSV(200, 2, 95.6)"/>
+<color name="9"        color="HSV(200, 2, 98)"/>
+
+<mapfont >Alegreya-Regular</mapfont>
+<mapfontsize >14</mapfontsize>
+<textfont >Alegreya-Regular</textfont>
+<textsizenew >18</textsizenew>
+<paragraphspacing >10</paragraphspacing>
+<mapbackgroundcolor >#fefefe</mapbackgroundcolor>
+<mapbackgroundcolor2 >#fcf2f3</mapbackgroundcolor2>
+<mapbackgroundpattern >plain</mapbackgroundpattern>
+<textcolor>#23384d</textcolor>
+<textbackgroundcolor>#fefefe</textbackgroundcolor>
+<maplinkcolor class="all">#c23d37</maplinkcolor>
+<darkoutlinetext>true</darkoutlinetext>
+
+<default attribute="MapBackgroundFill"></default>
+<default attribute="PlotColor">light green</default>
+<default attribute="BorderBevel">plain</default>
+<default attribute="Border">1</default>
+<default attribute="BorderColor">#fcf2f3</default>
+<default attribute="Color">#f7f3e6</default>
+<default attribute="CaptionColor">#edb7b4</default>
+
+<default attribute="Shadow">0</default>
+<default attribute="ShadowColor">lighter black</default>
+<default attribute="ShadowBlur">5</default>
+
+</colors>

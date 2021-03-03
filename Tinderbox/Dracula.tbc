@@ -1,0 +1,97 @@
+<colors version="1" >
+<description>The dracula color scheme for Tinderbox 8</description>
+
+<color name="0" color="#787a7a"/>
+<color name="1" color="#9ea0a1"/>
+<color name="2" color="#b4b7b8"/>
+<color name="3" color="#c3c6c7"/>
+<color name="4" color="#d0d3d4"/>
+<color name="5" color="#daddde"/>
+<color name="6" color="#e1e4e6"/>
+<color name="7" color="#e9ecee"/>
+<color name="8" color="#eff3f4"/>
+<color name="9" color="#f5f9fa"/>
+<color name="A1" color="#282a36"/>
+<color name="A10" color="#ff5555"/>
+<color name="A11" color="#f1fa8c"/>
+<color name="A2" color="#44475a"/>
+<color name="A3" color="#6272a4"/>
+<color name="A4" color="#f8f8f2"/>
+<color name="A5" color="#79e9ca"/>
+<color name="A6" color="#50fa7b"/>
+<color name="A7" color="#ff8074"/>
+<color name="A8" color="#ff79c6"/>
+<color name="A9" color="#aee86e"/>
+<color name="Background" color="#1e2431"/>
+<color name="Link" color="#90eafc"/>
+<color name="SA 0" color="#9a85bd"/>
+<color name="SA 10" color="#3a425b"/>
+<color name="SA 11" color="#ff78c6"/>
+<color name="SA 12" color="#c0c6d4"/>
+<color name="SA 2" color="#9a85bd"/>
+<color name="SA 3" color="#343845"/>
+<color name="SA 4" color="#ffcb4f"/>
+<color name="SA 5" color="#ffb86c"/>
+<color name="SA 6" color="#547989"/>
+<color name="SA 7" color="#6b6e72"/>
+<color name="SA 8" color="#b8b8ba"/>
+<color name="SA 9" color="#90eafc"/>
+<color name="Text" color="#cbccc5"/>
+<color name="black" color="#343845"/>
+<color name="blue" color="#9888c2"/>
+<color name="bright blue" color="#0000ff"/>
+<color name="bright green" color="#00ff00"/>
+<color name="bright red" color="#ff0000"/>
+<color name="cool gray" color="#b8b8c4"/>
+<color name="cool gray dark" color="#888890"/>
+<color name="cyan" color="#92b5ba"/>
+<color name="green" color="#778f3b"/>
+<color name="magenta" color="#b85474"/>
+<color name="normal" color="#dc490b"/>
+<color name="orange" color="#f0b06f"/>
+<color name="poppy" color="#ffcc66"/>
+<color name="red" color="#914f4a"/>
+<color name="violet" color="#b692b4"/>
+<color name="warm gray" color="#c0b8b8"/>
+<color name="warm gray dark" color="#908888"/>
+<color name="white" color="#ffffff"/>
+<color name="yellow" color="#f5c992"/>
+
+<color name="0"        color="HSV(5, 2, 48)"/>
+<color name="1"        color="HSV(5, 22, 63)"/>
+<color name="2"        color="HSV(5, 32, 72)"/>
+<color name="3"        color="HSV(5, 42, 78)"/>
+<color name="4"        color="HSV(5, 52, 83)"/>
+<color name="5"        color="HSV(5, 62, 87)"/>
+<color name="6"        color="HSV(5, 62, 90)"/>
+<color name="7"        color="HSV(5, 62, 93)"/>
+<color name="8"        color="HSV(5, 62, 95.6)"/>
+<color name="9"        color="HSV(5, 62, 98)"/>
+
+<color name="gray"        color="HSV(5, 1, 98)"/>
+
+<mapfont >IdealSansSSm-Book</mapfont>
+<mapfontsize >14</mapfontsize>
+<textfont >IdealSansSSm-Book</textfont>
+<textsizenew >14</textsizenew>
+<paragraphspacing >10</paragraphspacing>
+<mapbackgroundcolor >Background</mapbackgroundcolor>
+<mapbackgroundcolor2 >#e9e6df</mapbackgroundcolor2>
+<mapbackgroundpattern >plain</mapbackgroundpattern>
+<textcolor>white</textcolor>
+<textbackgroundcolor>Background</textbackgroundcolor>
+<maplinkcolor class="all">Link</maplinkcolor>
+<whiteoutlinetext>true</whiteoutlinetext>
+
+<default attribute="MapBackgroundFill"></default>
+<default attribute="PlotColor">red</default>
+<default attribute="BorderBevel">plain</default>
+<default attribute="Border">1</default>
+<default attribute="BorderColor">SA 11</default>
+<default attribute="Color">SA 10</default>
+
+<default attribute="Shadow">0</default>
+<default attribute="ShadowColor">lighter black</default>
+<default attribute="ShadowBlur">5</default>
+
+</colors>

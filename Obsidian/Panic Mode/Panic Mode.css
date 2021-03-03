@@ -15,10 +15,10 @@
 --font-medium: 21px;
 --line-height-preview: 1.7em;
 --line-height-header-preview: 1em;
---font-family-mdpreview: Gentium Plus, Alegreya, Source Sans Pro;
---font-family-editor: Skolar PE, iA Writer Quattro S, Menlo;
---font-family-preview: Gentium Plus, Alegreya, Source Sans Pro;
---font-family-code: Ubuntu Mono derivative Powerline, Menlo;
+--font-family-mdpreview: Skolar PE, Gentium Plus, Alegreya, Source Sans Pro, Avenir Next, Times New Roman;
+--font-family-editor: Skolar PE, iA Writer Quattro S, Menlo, Avenir Next, Times New Roman;
+--font-family-preview: Gentium Plus, Alegreya, Source Sans Pro, Palatino, Avenir Next, Times New Roman;
+--font-family-code: Ubuntu Mono derivative Powerline, Menlo, Monaco;
 } 
 
 .theme-light,
@@ -42,7 +42,7 @@
 	
 --text-accent:	#46b4d3;
 --text-accent-hover:	var(--text-faint);
---text-normal:	rgba(224, 226, 213,0.95); 
+--text-normal:	rgb(224, 226, 213); 
 --text-muted:	#a1a1a1;
 --text-faint:	#a1a1a1;
 --text-error:	#800000;
@@ -66,6 +66,7 @@
 --graph-line-on-hover:	var(--header-before-color);
 --hashtag-color:	var(--text-normal);
 --border-color:	#090b0d;
+	
 	
 --blockquote-border:	var(--text-accent);
 --pre-code-bg:	#121826;
@@ -2012,9 +2013,11 @@ ol.footnotes-list {
 }
 
 /* Remove a hr e o parágrafo abaixo */
+/* 
 .markdown-embed-content > hr + p { display: none; }
 .markdown-embed-content > hr { display: none; }
 .markdown-embed-content > hr.footnotes-sep { display: block;!important; }
+ */
 
 sub,
 sup {
